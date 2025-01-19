@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.weatherapi.com/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58a7f82d2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="home.css" />
+    <title>Free Weather API - Weather API.com</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-header">
+      <div class="container-fluid">
+        <img src="img/logo.png" class="img-logo ms-1" />
+
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="navbar-collapse-before">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apiexplorer.html">API Explorer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weather.html">Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="hero">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="row row-margin-left">
+              <div class="col-lg-12">
+                <h1>JSON and XML Weather API and Geolocation Developer API</h1>
+              </div>
+              <div class="col-lg-12">
+                <p class="mt-2">
+                  Designed for developers by developers, Weather API is the
+                  ultimate weather and geolocation API trusted by +100K users
+                  worldwide. Integrate weather in
+                  <span class="typewriter-effect"></span
+                  ><span class="type-cursor">|</span>.
+                </p>
+              </div>
+              <div class="col-sm-5 col-md-5 col-lg-5 mt-2">
+                <a href="signup.html">
+                  <button type="button" class="btn-get-started text-white">
+                    <span>Get Started Free</span>
+                    <img src="img/arrow1.png" class="img-arrow" />
+                  </button>
+                </a>
+              </div>
+              <div class="col-sm-5 col-md-5 col-lg-5 mt-2">
+                <a href="docs.html">
+                  <button type="button" class="btn-view-docs text-white">
+                    <span>View Docs</span>
+                    <img src="img/arrow1.png" class="img-arrow1" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <img src="img/hero-img.png" class="img-hero ms-5" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="historical-weather">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <h2 class="text-center h2-title-historical-weather">
+              Forecasted and Historical Weather
+            </h2>
+            <p class="text-center p-title-historical-weather">
+              Free Weather Forecast JSON and XML
+            </p>
+          </div>
+        </div>
+        <div class="feature-weather mt-5">
+          <div class="row">
+            <div
+              class="col-sm-6 col-md-6 col-lg-6 col-xl-3 div-feature feature-one"
+            >
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="div-circle mt-3">
+                    <i class="fa-solid fa-shapes img-feature-one"></i>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <h5 class="h5-feature pt-3">Real-time Weather API</h5>
+                  <h6 class="h6-feature">
+                    Real-time or current JSON weather and XML weather API
+                    provides access to near real-time weather information for
+                    millions of locations worldwide.
+                  </h6>
+                </div>
+                <div class="col-lg-12 mt-1">
+                  <a class="a-feature" href="features.html"
+                    >Learn more &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-6 col-lg-6 col-xl-3 ms-4 div-feature feature-two"
+            >
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="div-circle mt-3">
+                    <i class="fa-solid fa-angles-right img-feature-two"></i>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <h5 class="h5-feature pt-3">Historical and Future Weather</h5>
+                  <h6 class="h6-feature">
+                    14 day hour by hour weather forecast and hourly historical
+                    weather for millions of cities and towns around the world in
+                    JSON and XML format.
+                  </h6>
+                </div>
+                <div class="col-lg-12">
+                  <a class="a-feature" href="features.html"
+                    >Learn more &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-6 col-lg-6 col-xl-3 ms-4 div-feature feature-three"
+            >
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="div-circle mt-3">
+                    <i class="fa-solid fa-wrench img-feature-three"></i>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <h5 class="h5-feature pt-3">Geolocation API</h5>
+                  <h6 class="h6-feature">
+                    Air Quality Data, Time zone, Astronomy, IP lookup, Sports
+                    API, Currency API, Map API and Geo API
+                  </h6>
+                </div>
+                <div class="col-lg-12 mt-1">
+                  <a class="a-feature" href="features.html"
+                    >Learn more &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-6 col-lg-6 col-xl-3 ms-4 div-feature feature-four"
+            >
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="div-circle mt-3">
+                    <i class="fa-solid fa-book img-feature-four"></i>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <h5 class="h5-feature pt-3">XML and JSON</h5>
+                  <h6 class="h6-feature">Complete documentation</h6>
+                </div>
+                <div class="col-lg-12 mt-1">
+                  <a class="a-feature" href="features.html"
+                    >Learn more &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <a href="features.html" class="text-decoration-none"
+              ><button
+                type="button"
+                class="button-historical mx-auto d-block bg-light"
+              >
+                <span>View All Features</span>
+                <i
+                  class="fa-solid fa-circle-right img-button-historical"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="step-weather-api mt-5">
+        <div class="row">
+          <h2 class="text-center h2-weather-api">
+            JSON and XML Weather API and Geolocation Developer API
+          </h2>
+          <h5 class="text-center p-weather-api">
+            Hourly weather, history, astronomy, air quality data, sports and
+            much more
+          </h5>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-4 for-distancing-right">
+            <div class="col-lg-12">
+              <svg
+                class="monitor ms-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #f0f2ff;
+                    }
+                    .cls-2,
+                    .cls-8 {
+                      fill: none;
+                    }
+                    .cls-2,
+                    .cls-5,
+                    .cls-6,
+                    .cls-7,
+                    .cls-8 {
+                      stroke: #4550e5;
+                      stroke-linejoin: round;
+                    }
+                    .cls-2,
+                    .cls-5 {
+                      stroke-linecap: round;
+                    }
+                    .cls-3,
+                    .cls-6 {
+                      fill: #d6daff;
+                    }
+                    .cls-4,
+                    .cls-5,
+                    .cls-7 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="cls-1"
+                  d="M90,55.24a40,40,0,1,0-76.44,16.5H86.44A39.85,39.85,0,0,0,90,55.24Z"
+                />
+                <line class="cls-2" x1="11" y1="71.74" x2="89" y2="71.74" />
+                <line class="cls-2" x1="6.5" y1="71.74" x2="9" y2="71.74" />
+                <line class="cls-2" x1="91" y1="71.74" x2="93.5" y2="71.74" />
+                <ellipse
+                  class="cls-1"
+                  cx="49.43"
+                  cy="83.04"
+                  rx="14.85"
+                  ry="1.71"
+                />
+                <path
+                  class="cls-3"
+                  d="M72.28,43.1a3.62,3.62,0,0,0-3.63-3.62H31.35a3.62,3.62,0,0,0-3.63,3.62V67.83H72.28Z"
+                />
+                <path
+                  class="cls-4"
+                  d="M57.49,39.48H31.35a3.62,3.62,0,0,0-3.63,3.62V67.83h1.42Z"
+                />
+                <polygon
+                  class="cls-4"
+                  points="55.4 78.63 44.6 78.63 45.27 73.23 54.73 73.23 55.4 78.63"
+                />
+                <polygon
+                  class="cls-2"
+                  points="55.4 78.63 44.6 78.63 45.27 73.23 54.73 73.23 55.4 78.63"
+                />
+                <path
+                  class="cls-5"
+                  d="M57.73,81.33H42.27a.84.84,0,0,1-.78-1.17,2.7,2.7,0,0,1,2.43-1.53H56.08a2.7,2.7,0,0,1,2.43,1.53A.84.84,0,0,1,57.73,81.33Z"
+                />
+                <path
+                  class="cls-5"
+                  d="M68.65,73.23a3.62,3.62,0,0,0,3.63-3.62V67.83H27.72v1.78a3.62,3.62,0,0,0,3.63,3.62Z"
+                />
+                <path
+                  class="cls-2"
+                  d="M72.28,43.1a3.62,3.62,0,0,0-3.63-3.62H31.35a3.62,3.62,0,0,0-3.63,3.62V67.83H72.28Z"
+                />
+                <path
+                  class="cls-2"
+                  d="M50.6,70.53a.6.6,0,1,1-.6-.6A.6.6,0,0,1,50.6,70.53Z"
+                />
+                <path
+                  class="cls-6"
+                  d="M63.39,58.19A2.41,2.41,0,0,1,61,60.61H39a2.42,2.42,0,0,1,0-4.83H61A2.41,2.41,0,0,1,63.39,58.19Z"
+                />
+                <path
+                  class="cls-7"
+                  d="M55.14,55.78H39a2.42,2.42,0,0,0,0,4.83H55.14Z"
+                />
+                <path
+                  class="cls-8"
+                  d="M55.14,55.78H39a2.42,2.42,0,0,0,0,4.83H55.14Z"
+                />
+                <path
+                  class="cls-4"
+                  d="M42.21,23.34a1.22,1.22,0,0,0-1,1.95L49,35.38a1.22,1.22,0,0,0,1.92,0l7.79-10.09a1.22,1.22,0,0,0-1-1.95h-3v-5.6a2.41,2.41,0,0,0-2.41-2.41H47.58a2.41,2.41,0,0,0-2.41,2.41v5.6Z"
+                />
+                <path
+                  class="cls-8"
+                  d="M42.21,23.34a1.22,1.22,0,0,0-1,1.95L49,35.38a1.22,1.22,0,0,0,1.92,0l7.79-10.09a1.22,1.22,0,0,0-1-1.95h-3v-5.6a2.41,2.41,0,0,0-2.41-2.41H47.58a2.41,2.41,0,0,0-2.41,2.41v5.6Z"
+                />
+              </svg>
+            </div>
+            <div class="col-lg-12 for-distancing-right-two">
+              <h5 class="h5-number">
+                <span class="span-number pe-3">1</span>
+                Start Free, Upgrade Later
+              </h5>
+              <h6 class="h6-number mt-3">
+                Signup for free Weather API and then upgrade at anytime. No long
+                term commitments.
+              </h6>
+            </div>
+          </div>
+          <div class="col-lg-4 pe-4 for-distancing-right">
+            <div class="col-lg-12">
+              <svg
+                class="monitor ms-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #f0f2ff;
+                    }
+                    .cls-2 {
+                      fill: none;
+                    }
+                    .cls-2,
+                    .cls-5,
+                    .cls-6,
+                    .cls-7,
+                    .cls-8 {
+                      stroke: #4550e5;
+                      stroke-linejoin: round;
+                    }
+                    .cls-2,
+                    .cls-5,
+                    .cls-6 {
+                      stroke-linecap: round;
+                    }
+                    .cls-3,
+                    .cls-6,
+                    .cls-7 {
+                      fill: #d6daff;
+                    }
+                    .cls-4,
+                    .cls-5,
+                    .cls-8 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="cls-1"
+                  d="M90.5,55.93a40,40,0,1,0-76.44,16.5H86.94A39.88,39.88,0,0,0,90.5,55.93Z"
+                />
+                <line class="cls-2" x1="11" y1="72.43" x2="89" y2="72.43" />
+                <line class="cls-2" x1="6.5" y1="72.43" x2="9" y2="72.43" />
+                <line class="cls-2" x1="91" y1="72.43" x2="93.5" y2="72.43" />
+                <rect
+                  class="cls-3"
+                  x="23.65"
+                  y="41.29"
+                  width="48.3"
+                  height="34.5"
+                  rx="3.6"
+                  ry="3.6"
+                />
+                <path
+                  class="cls-4"
+                  d="M52.86,41.29H27.79a4.14,4.14,0,0,0-4.14,4.14V70.5Z"
+                />
+                <rect
+                  class="cls-2"
+                  x="23.65"
+                  y="41.29"
+                  width="48.3"
+                  height="34.5"
+                  rx="3.6"
+                  ry="3.6"
+                />
+                <path
+                  class="cls-5"
+                  d="M67.81,75.79A4.14,4.14,0,0,0,72,71.65V70.27H23.65v1.38a4.14,4.14,0,0,0,4.14,4.14Z"
+                />
+                <polygon
+                  class="cls-4"
+                  points="51.94 81.31 43.66 81.31 44.35 75.79 51.25 75.79 51.94 81.31"
+                />
+                <polygon
+                  class="cls-2"
+                  points="51.94 81.31 43.66 81.31 44.35 75.79 51.25 75.79 51.94 81.31"
+                />
+                <path
+                  class="cls-5"
+                  d="M56.77,84.07H38.83a2.76,2.76,0,0,1,2.76-2.76H54A2.77,2.77,0,0,1,56.77,84.07Z"
+                />
+                <path
+                  class="cls-5"
+                  d="M34.69,36.46h40a0,0,0,0,1,0,0V60.28a2.4,2.4,0,0,1-2.4,2.4H37.09a2.4,2.4,0,0,1-2.4-2.4V36.46A0,0,0,0,1,34.69,36.46Z"
+                />
+                <path
+                  class="cls-5"
+                  d="M37.09,28.18H72.31a2.4,2.4,0,0,1,2.4,2.4v5.88a0,0,0,0,1,0,0h-40a0,0,0,0,1,0,0V30.58A2.4,2.4,0,0,1,37.09,28.18Z"
+                />
+                <circle class="cls-6" cx="38.83" cy="32.32" r="1.38" />
+                <circle class="cls-6" cx="44.35" cy="32.32" r="1.38" />
+                <circle class="cls-6" cx="49.87" cy="32.32" r="1.38" />
+                <rect
+                  class="cls-6"
+                  x="47.11"
+                  y="44.74"
+                  width="5.52"
+                  height="5.52"
+                  rx="1"
+                  ry="1"
+                />
+                <rect
+                  class="cls-6"
+                  x="56.08"
+                  y="44.74"
+                  width="5.52"
+                  height="5.52"
+                  rx="1"
+                  ry="1"
+                />
+                <rect
+                  class="cls-6"
+                  x="65.05"
+                  y="44.74"
+                  width="5.52"
+                  height="5.52"
+                  rx="1"
+                  ry="1"
+                />
+                <rect
+                  class="cls-6"
+                  x="47.11"
+                  y="53.02"
+                  width="5.52"
+                  height="5.52"
+                  rx="1"
+                  ry="1"
+                />
+                <rect
+                  class="cls-6"
+                  x="56.08"
+                  y="53.02"
+                  width="5.52"
+                  height="5.52"
+                  rx="1"
+                  ry="1"
+                />
+                <rect
+                  class="cls-6"
+                  x="65.05"
+                  y="53.02"
+                  width="5.52"
+                  height="5.52"
+                  rx="1"
+                  ry="1"
+                />
+                <rect
+                  class="cls-6"
+                  x="38.83"
+                  y="39.22"
+                  width="5.52"
+                  height="2.76"
+                  rx="1"
+                  ry="1"
+                />
+                <rect
+                  class="cls-7"
+                  x="47.11"
+                  y="39.22"
+                  width="23.46"
+                  height="2.76"
+                  rx="1"
+                  ry="1"
+                />
+                <line
+                  class="cls-2"
+                  x1="38.83"
+                  y1="44.74"
+                  x2="44.35"
+                  y2="44.74"
+                />
+                <line class="cls-2" x1="38.83" y1="47.5" x2="44.35" y2="47.5" />
+                <line
+                  class="cls-2"
+                  x1="38.83"
+                  y1="50.26"
+                  x2="44.35"
+                  y2="50.26"
+                />
+                <line
+                  class="cls-2"
+                  x1="38.83"
+                  y1="53.02"
+                  x2="44.35"
+                  y2="53.02"
+                />
+                <line
+                  class="cls-2"
+                  x1="38.83"
+                  y1="55.78"
+                  x2="44.35"
+                  y2="55.78"
+                />
+                <line
+                  class="cls-2"
+                  x1="38.83"
+                  y1="58.54"
+                  x2="42.28"
+                  y2="58.54"
+                />
+                <path
+                  class="cls-8"
+                  d="M83.68,73.65c-.2.73-.6.75-.89,0L78.26,62.84c-.29-.7,0-1,.75-.74l10.86,4.52c.7.3.67.7-.06.9l-3.48,1a2.7,2.7,0,0,0-1.7,1.69Z"
+                />
+                <circle class="cls-2" cx="47.8" cy="73.03" r="0.58" />
+              </svg>
+            </div>
+            <div class="col-lg-12 for-distancing-right-two">
+              <h5 class="h5-number">
+                <span class="span-number pe-3">2</span>
+                Scalable with 99.99% uptime
+              </h5>
+              <h6 class="h6-number mt-3">
+                We manage the infrastructure, hardware and network. While you
+                simply enjoy the weather forecast data and leave rest on us.
+              </h6>
+            </div>
+          </div>
+          <div class="col-lg-4 for-distancing-right">
+            <div class="col-lg-12">
+              <svg
+                class="monitor ms-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #f0f2ff;
+                    }
+                    .cls-2,
+                    .cls-7 {
+                      fill: none;
+                    }
+                    .cls-2,
+                    .cls-5,
+                    .cls-6,
+                    .cls-7 {
+                      stroke: #4550e5;
+                    }
+                    .cls-2,
+                    .cls-5,
+                    .cls-6 {
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                    }
+                    .cls-3,
+                    .cls-6 {
+                      fill: #d6daff;
+                    }
+                    .cls-4,
+                    .cls-5 {
+                      fill: #fff;
+                    }
+                    .cls-7 {
+                      stroke-miterlimit: 10;
+                    }
+                  </style>
+                </defs>
+                <path
+                  class="cls-1"
+                  d="M89.89,53.45A40,40,0,1,0,13.46,70H86.33A39.85,39.85,0,0,0,89.89,53.45Z"
+                />
+                <line
+                  class="cls-2"
+                  x1="10.39"
+                  y1="69.95"
+                  x2="88.39"
+                  y2="69.95"
+                />
+                <line class="cls-2" x1="5.89" y1="69.95" x2="8.39" y2="69.95" />
+                <line
+                  class="cls-2"
+                  x1="90.39"
+                  y1="69.95"
+                  x2="92.89"
+                  y2="69.95"
+                />
+                <ellipse
+                  class="cls-1"
+                  cx="50.11"
+                  cy="84.97"
+                  rx="15.75"
+                  ry="1.57"
+                />
+                <path
+                  class="cls-3"
+                  d="M69.63,71.11V51a2.52,2.52,0,0,0-2.52-2.52h-34A2.52,2.52,0,0,0,30.58,51V71.11Z"
+                />
+                <path
+                  class="cls-4"
+                  d="M35.62,71.11,58.3,48.43H33.1A2.52,2.52,0,0,0,30.58,51V71.11Z"
+                />
+                <path
+                  class="cls-5"
+                  d="M69.63,71.11v5a2.52,2.52,0,0,1-2.52,2.52h-34a2.52,2.52,0,0,1-2.52-2.52v-5Z"
+                />
+                <path
+                  class="cls-6"
+                  d="M51.37,74.89a1.26,1.26,0,1,1-1.26-1.26A1.26,1.26,0,0,1,51.37,74.89Z"
+                />
+                <polygon
+                  class="cls-5"
+                  points="56.41 83.71 43.8 83.71 44.44 78.67 55.78 78.67 56.41 83.71"
+                />
+                <line
+                  class="cls-2"
+                  x1="40.03"
+                  y1="83.71"
+                  x2="60.18"
+                  y2="83.71"
+                />
+                <path
+                  class="cls-2"
+                  d="M69.63,71.11V51a2.52,2.52,0,0,0-2.52-2.52h-34A2.52,2.52,0,0,0,30.58,51V71.11Z"
+                />
+                <path
+                  class="cls-4"
+                  d="M57.67,59.77a7.56,7.56,0,1,1-7.56-7.56A7.56,7.56,0,0,1,57.67,59.77Z"
+                />
+                <path
+                  class="cls-2"
+                  d="M57.67,59.77a7.56,7.56,0,1,1-7.56-7.56A7.56,7.56,0,0,1,57.67,59.77Z"
+                />
+                <path
+                  class="cls-3"
+                  d="M48.85,64.18a1.88,1.88,0,0,1-1.34-.55L45,61.11a1.89,1.89,0,0,1,2.67-2.67l1.19,1.18,3.07-3.07a1.89,1.89,0,0,1,2.67,2.67l-4.41,4.41A1.87,1.87,0,0,1,48.85,64.18Z"
+                />
+                <path
+                  class="cls-2"
+                  d="M48.85,64.18a1.88,1.88,0,0,1-1.34-.55L45,61.11a1.89,1.89,0,0,1,2.67-2.67l1.19,1.18,3.07-3.07a1.89,1.89,0,0,1,2.67,2.67l-4.41,4.41A1.87,1.87,0,0,1,48.85,64.18Z"
+                />
+                <rect
+                  class="cls-4"
+                  x="2.84"
+                  y="32.05"
+                  width="25.2"
+                  height="15.12"
+                  rx="1.05"
+                  ry="1.05"
+                  transform="translate(-10.22 5.71) rotate(-15.83)"
+                />
+                <path
+                  class="cls-4"
+                  d="M25.82,39.29l-1.37-4.85a2.53,2.53,0,0,1-3.12-1.74L6.79,36.82a2.53,2.53,0,0,1-1.74,3.12l1.37,4.85a2.52,2.52,0,0,1,3.12,1.73L24.08,42.4A2.52,2.52,0,0,1,25.82,39.29Z"
+                />
+                <path
+                  class="cls-3"
+                  d="M17.86,38.92a2.52,2.52,0,1,1-3.11-1.73A2.53,2.53,0,0,1,17.86,38.92Z"
+                />
+                <path
+                  class="cls-2"
+                  d="M17.86,38.92a2.52,2.52,0,1,1-3.11-1.73A2.53,2.53,0,0,1,17.86,38.92Z"
+                />
+                <path
+                  class="cls-2"
+                  d="M25.82,39.29l-1.37-4.85a2.53,2.53,0,0,1-3.12-1.74L6.79,36.82a2.53,2.53,0,0,1-1.74,3.12l1.37,4.85a2.52,2.52,0,0,1,3.12,1.73L24.08,42.4A2.52,2.52,0,0,1,25.82,39.29Z"
+                />
+                <rect
+                  class="cls-2"
+                  x="2.84"
+                  y="32.05"
+                  width="25.2"
+                  height="15.12"
+                  rx="1.05"
+                  ry="1.05"
+                  transform="translate(-10.22 5.71) rotate(-15.83)"
+                />
+                <path
+                  class="cls-4"
+                  d="M92.82,49.74,75.05,44.65a2.09,2.09,0,0,1-1.44-2.59l3-10.5a2.09,2.09,0,0,1,2.59-1.44L97,35.21a2.1,2.1,0,0,1,1.44,2.59l-3,10.5A2.09,2.09,0,0,1,92.82,49.74Z"
+                />
+                <rect
+                  class="cls-3"
+                  x="75.72"
+                  y="35.04"
+                  width="22.68"
+                  height="2.52"
+                  transform="translate(13.36 -22.57) rotate(15.98)"
+                />
+                <line
+                  class="cls-2"
+                  x1="76.15"
+                  y1="42.35"
+                  x2="82.21"
+                  y2="44.08"
+                />
+                <rect
+                  class="cls-4"
+                  x="76.85"
+                  y="39.88"
+                  width="17.64"
+                  height="2.52"
+                  transform="translate(14.64 -22) rotate(15.98)"
+                />
+                <path
+                  class="cls-2"
+                  d="M92.82,49.74,75.05,44.65a2.09,2.09,0,0,1-1.44-2.59l3-10.5a2.09,2.09,0,0,1,2.59-1.44L97,35.21a2.1,2.1,0,0,1,1.44,2.59l-3,10.5A2.09,2.09,0,0,1,92.82,49.74Z"
+                />
+                <rect
+                  class="cls-2"
+                  x="75.72"
+                  y="35.04"
+                  width="22.68"
+                  height="2.52"
+                  transform="translate(13.36 -22.57) rotate(15.98)"
+                />
+                <rect
+                  class="cls-2"
+                  x="76.85"
+                  y="39.88"
+                  width="17.64"
+                  height="2.52"
+                  transform="translate(14.64 -22) rotate(15.98)"
+                />
+                <circle class="cls-3" cx="50.11" cy="29.9" r="8.4" />
+                <path
+                  class="cls-4"
+                  d="M50.11,21.5a8.4,8.4,0,0,0-5.94,14.34L56.05,24A8.41,8.41,0,0,0,50.11,21.5Z"
+                />
+                <circle class="cls-7" cx="50.11" cy="29.9" r="8.4" />
+                <line
+                  class="cls-2"
+                  x1="50.11"
+                  y1="34.1"
+                  x2="50.11"
+                  y2="35.15"
+                />
+                <line
+                  class="cls-2"
+                  x1="50.11"
+                  y1="24.65"
+                  x2="50.11"
+                  y2="25.7"
+                />
+                <path
+                  class="cls-2"
+                  d="M48,32a2.1,2.1,0,1,0,2.1-2.1,2.1,2.1,0,1,1,2.1-2.1"
+                />
+              </svg>
+            </div>
+            <div class="col-lg-12 for-distancing-right-two">
+              <h5 class="h5-number">
+                <span class="span-number pe-3">3</span>
+                Launch
+              </h5>
+              <h6 class="h6-number mt-3">
+                All data in lightweight, simple and easy JSON and XML format.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="example-code">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <img src="img/img-code.png" class="img-code-weather" />
+          </div>
+          <div class="col-lg-6">
+            <div class="nav-right-column d-flex flex-column">
+              <div class="nav-code">
+                <span class="span-code text-black">
+                  <i class="fa-brands fa-github"></i>
+                  <span class="ms-3"> Current Weather Example</span>
+                </span>
+              </div>
+              <div class="nav-code">
+                <span class="span-code text-black"
+                  ><i class="fa-brands fa-codepen"></i>
+                  <span class="ms-3"> Forecast Example</span>
+                </span>
+              </div>
+              <div class="nav-code">
+                <span class="span-code text-black"
+                  ><i class="fa-solid fa-code"></i>
+                  <span class="span-code-fix"> History Example</span>
+                </span>
+              </div>
+              <div class="nav-code">
+                <span class="span-code text-black"
+                  ><i class="fa-solid fa-play ms-1"></i>
+                  <span class="ms-3"> Search/Autocomplete Example</span>
+                </span>
+              </div>
+              <div class="nav-code">
+                <span class="span-code text-black"
+                  ><i class="fa-solid fa-image"></i>
+                  <span class="ms-3"> Astronomy Example</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <a href="signup.html" class="text-decoration-none">
+              <button
+                type="button"
+                class="button-get-started-two mx-auto d-block"
+              >
+                <span>Get Started</span>
+                <i
+                  class="fa-solid fa-circle-right img-get-started-two"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-easy-signup mt-1 position-relative">
+      <div class="side-left-skew"></div>
+      <div class="side-right-skew"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h3 class="text-center text-white pt-5 h3-quick-easy">
+              Quick and Easy Signup for Free Weather API
+            </h3>
+            <p class="text-center text-white p-quick-easy">
+              WeatherAPI.com makes it super easy to integrate our realtime and
+              weather forecast data, historical weather, air quality data,
+              autocomplete, time zone, astronomy and sports data into your new
+              or existing project.
+            </p>
+            <a href="signup.html" class="text-decoration-none">
+              <button
+                type="button"
+                class="button-get-started-three mx-auto d-block"
+              >
+                <span>Get Started</span>
+                <i
+                  class="fa-solid fa-circle-right img-get-started-three"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer mt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <h6 class="h6-footer">Developers</h6>
+            <nav class="nav flex-column nav-footer">
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">APIs</a>
+              <a class="nav-link" href="#">Docs</a>
+              <a class="nav-link" href="#">Github</a>
+              <a class="nav-link" href="#">Weather</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Climately.com</a>
+              <a class="nav-link" href="#">TheGlobalWeather.com</a>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <nav class="nav flex-column nav-footer-two">
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Privacy</a>
+              <a class="nav-link" href="#">Terms of Services</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-12">
+            <span class="span-footer"
+              >Popular Holiday Destinations: <a href="#"> Gran Canaria</a> |
+              <a href="#">Tenerife</a> | <a href="#">Majorca</a> |
+              <a href="#">Lanzarote</a> | <a href="#">Fuerteventura</a> |
+              <a href="#">Crete</a> | <a href="#">New York</a> |
+              <a href="#">Rome</a> | <a href="#">Dubai</a> |
+              <a href="#">London</a> | <a href="#">Sydney</a> |
+              <a href="#">Moscow</a></span
+            >
+            <hr class="hr-footer" />
+          </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-lg-12">
+            <p class="p-footer text-center">
+              Copyright © <a href="#">Weather API</a>
+            </p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-lg-12">
+            <div class="icon-footer d-flex justify-content-center mb-5">
+              <div class="circle-social-media">
+                <a href="https://github.com/weatherapicom/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://twitter.com/weatherapidev/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://www.facebook.com/weatherapidev"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="contact-us">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-us-div d-flex justify-content-end">
+              <div class="contact-us-box position-absolute pb-2 display-none">
+                <div class="col-lg-12">
+                  <div class="title-contact-us-box">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p class="text-white p-contact-us">Contact us!</p>
+                        <p class="text-white p-enter-message mt-3">
+                          Please enter your message for our team and <br />
+                          we will get back to you ASAP.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <span class="span-indicates d-flex justify-content-end mt-4"
+                      >* indicates a required field</span
+                    >
+                    <label for="name" class="span-indicates">Name *</label
+                    ><br />
+                    <input
+                      type="text"
+                      name="name"
+                      class="w-100 input-contact-us"
+                      placeholder="Enter your name..."
+                    /><br />
+                    <label for="email" class="span-indicates mt-2"
+                      >Email *</label
+                    ><br />
+                    <input
+                      type="email"
+                      name="email"
+                      class="w-100 input-contact-us"
+                      placeholder="Enter your email..."
+                    />
+                    <label for="message" class="span-indicates mt-2"
+                      >Message *</label
+                    ><br />
+                    <textarea
+                      name="message"
+                      class="w-100 input-contact-us"
+                    ></textarea>
+                    <button
+                      type="submit"
+                      class="w-100 text-center text-white mt-2"
+                    >
+                      SEND
+                    </button>
+                    <div class="powered-div mt-2 d-flex justify-content-end">
+                      <span class="span-powered">powered by </span>
+                      <img src="img/olark-logo-img.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button-message">
+                <img src="img/message.png" class="img-message" />
+                <span class="span-contact-us">Contact Us</span>
+                <svg
+                  class="svg-close position-absolute display-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="#FFFFFF"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>
