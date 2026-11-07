@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.weatherapi.com/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58a7f82d2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="features.css" />
+    <title>World Weather API - Online Weather API - WeatherAPI.com</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-header">
+      <div class="container-fluid">
+        <img src="img/logo.png" class="img-logo ms-1" />
+
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="navbar-collapse-before">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apiexplorer.html">API Explorer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weather.html">Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="header-features mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Free Weather API and Geolocation API</h1>
+            <h3>
+              Realtime, Hourly forecast, Historical Weather, Air Quality Data,
+              Astronomy, Search, Sports and much more
+            </h3>
+            <h5>
+              Completely managed online - Simple to use - Built for developers,
+              by developers
+            </h5>
+            <p class="mt-3">
+              WeatherAPI.com is a powerful fully managed free weather and
+              geolocation API provider that provides extensive APIs that range
+              from the realtime and weather forecast, historical weather, Air
+              Quality Data, IP lookup, and astronomy through to sports, time
+              zone, and geolocation.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <div class="row pb-3">
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="weather-forecast-data">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/weather-forecast-data-features.webp" />
+                  <h3 class="h3-features-one">
+                    So, just what can our weather forecast data do for you?
+                  </h3>
+                  <p class="mt-2">
+                    We provide free API for different types of data. Currently
+                    we comprehensively cover:
+                  </p>
+                  <ul>
+                    <li>Real-time weather</li>
+                    <li>Up to 14 day hourly weather forecast</li>
+                    <li>
+                      Historical hourly weather forecast (from 1-Jan-2010
+                      onwards)
+                    </li>
+                    <li>
+                      Future Weather (Upto 300 days ahead)<span
+                        class="badge rounded-pill bg-danger badge-new"
+                        >New</span
+                      >
+                    </li>
+                    <li>Astronomy</li>
+                    <li>Time Zone</li>
+                    <li>IP Lookup</li>
+                    <li>Sports API</li>
+                    <li>
+                      Weather Alerts<span
+                        class="badge rounded-pill bg-danger badge-new"
+                        >New</span
+                      >
+                    </li>
+                    <li>
+                      Air Quality Data<span
+                        class="badge rounded-pill bg-danger badge-new"
+                        >New</span
+                      >
+                    </li>
+                    <li>Currency API (Coming soon)</li>
+                    <li>Map API (Coming soon)</li>
+                    <li>Location data</li>
+                    <li>Up to 99.99% uptime</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="global-weather">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/global-weather-features.webp" />
+                  <h3 class="h3-features-two">Global Weather</h3>
+                  <p class="mt-2">
+                    Worldwide accurate realtime, hourly 14 day weather forecast,
+                    future weather (upto 300 days ahead), air quality data and
+                    historical weather data for any geo point in the world. Data
+                    can be accessed using:
+                  </p>
+                  <ul>
+                    <li>City or town name</li>
+                    <li>Latitude and Longitude (decimal degree)</li>
+                    <li>UK postcode</li>
+                    <li>US ZIP code</li>
+                    <li>Canada postal code</li>
+                    <li>IP address</li>
+                    <li>Auto IP detection</li>
+                    <li>Airport code</li>
+                    <li class="li-margin-bottom-one">Metar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="historical-weather-data">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/historical-weather-data-features.webp" />
+                  <h3 class="h3-features-three">Historical Weather Data</h3>
+                  <p class="p-margin-bottom-one mt-2">
+                    We provide historical weather forecast data in hourly
+                    interval from Jan 2010 till now in hourly and daily
+                    interval.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="high-availability">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/high-availability-features.webp" />
+                  <h3 class="h3-features-four">High Availability</h3>
+                  <p class="mt-2">
+                    Our fully managed Weather API runs on high spec data servers
+                    and if a server fails, your API is instantly served from a
+                    replacement server in a seamless manner and without any
+                    manual intervention. We’re super proud of our 99.99% uptime
+                    rate. And we’re even prouder to say that this applies across
+                    the board with equal reliability for our free customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="lightning-fast-response">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/lightning-fast-response-features.webp" />
+                  <h3 class="h3-features-five">
+                    Lightning fast response times
+                  </h3>
+                  <p class="p-margin-bottom-two mt-2">
+                    With response times of ~200ms it’s safe to say that our
+                    weather API is pretty speedy. So don’t just listen to how
+                    our robust data is delivered in lightning fast times.
+                    <a href="#">Take it for trial now</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="flexible-access-options">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/flexible-access-features.webp" />
+                  <h3 class="h3-features-six">
+                    SSL: Flexible access options to meet the need for varying
+                    security
+                  </h3>
+                  <p class="mt-2">
+                    Need standard access to our API, or something with enhanced
+                    security? No problem, WeatherAPI.com provides both HTTP and
+                    HTTPS access for no extra charge.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="scalable">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/scalable-features.webp" />
+                  <h3 class="h3-features-seven">Scalable</h3>
+                  <p class="mt-2">
+                    Using our Weather API for mobile applications or an upcoming
+                    events or for a startup website, our fully- managed weather
+                    API can scale with your demand by easy upgrade and downgrade
+                    functionality at your fingertips. When upgrading or
+                    downgrading your plan, you don't need to make any change to
+                    your application – simply change your weather API plan.
+                    Scaling, upgrades and downgrades do not involve any
+                    downtime.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-3 pb-3">
+            <div class="fully-automated-service">
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="img/fully-automated-features.webp" />
+                  <h3 class="h3-features-eight">Fully-automated service</h3>
+                  <p class="p-margin-bottom-three mt-2">
+                    Our Free Weather API platform is fully automated and
+                    provides best user experience. So if you are looking for
+                    best weather API then look no more and give us a try today.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 pt-3 col-sla">
+            <div class="sla-available">
+              <img src="img/sla-available-features.webp" />
+              <h3 class="h3-features-nine">
+                SLA available for high volume users
+              </h3>
+              <p class="mt-2">
+                In the world of app development, there is no such thing as one
+                data solution fitting all, which is why we provide an SLA for
+                clients who opt for our High Volume package.
+              </p>
+              <p class="mt-2">
+                This provides you with complete peace of mind that your
+                in-demand app is backed up by a 4-8 hours response time from a
+                fully qualified engineer should it be required.
+              </p>
+              <p class="mt-2">
+                And if we can’t fix the problem within 24 hours then we’ll be
+                sure to refund you for 24 hours’ service for every 60 minutes of
+                lost connection thereafter, this can be up to a value equal to
+                your monthly subscription charge.
+              </p>
+              <p class="p-italic mt-2">
+                "WeatherAPI.com provides the powerful fully managed weather API
+                that can drive your app.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-easy-signup mt-1 position-relative">
+      <div class="side-left-skew"></div>
+      <div class="side-right-skew"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h3 class="text-center text-white pt-5 h3-quick-easy">
+              Quick and Easy Signup for Free Weather API
+            </h3>
+            <p class="text-center text-white p-quick-easy">
+              WeatherAPI.com makes it super easy to integrate our realtime and
+              weather forecast data, historical weather, air quality data,
+              autocomplete, time zone, astronomy and sports data into your new
+              or existing project.
+            </p>
+            <a href="signup.html" class="text-decoration-none">
+              <button
+                type="button"
+                class="button-get-started-three mx-auto d-block"
+              >
+                <span>Get Started</span>
+                <i
+                  class="fa-solid fa-circle-right img-get-started-three"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer mt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <h6 class="h6-footer">Developers</h6>
+            <nav class="nav flex-column nav-footer">
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">APIs</a>
+              <a class="nav-link" href="#">Docs</a>
+              <a class="nav-link" href="#">Github</a>
+              <a class="nav-link" href="#">Weather</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Climately.com</a>
+              <a class="nav-link" href="#">TheGlobalWeather.com</a>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <nav class="nav flex-column nav-footer-two">
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Privacy</a>
+              <a class="nav-link" href="#">Terms of Services</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-12">
+            <span class="span-footer"
+              >Popular Holiday Destinations: <a href="#"> Gran Canaria</a> |
+              <a href="#">Tenerife</a> | <a href="#">Majorca</a> |
+              <a href="#">Lanzarote</a> | <a href="#">Fuerteventura</a> |
+              <a href="#">Crete</a> | <a href="#">New York</a> |
+              <a href="#">Rome</a> | <a href="#">Dubai</a> |
+              <a href="#">London</a> | <a href="#">Sydney</a> |
+              <a href="#">Moscow</a></span
+            >
+            <hr />
+          </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-lg-12">
+            <p class="p-footer text-center">
+              Copyright © <a href="home.html">Weather API</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="icon-footer d-flex justify-content-center mb-5">
+              <div class="circle-social-media">
+                <a href="https://github.com/weatherapicom/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://twitter.com/weatherapidev/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://www.facebook.com/weatherapidev"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="contact-us">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-us-div d-flex justify-content-end">
+              <div class="contact-us-box position-absolute pb-2 display-none">
+                <div class="col-lg-12">
+                  <div class="title-contact-us-box">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p class="text-white p-contact-us">Contact us!</p>
+                        <p class="text-white p-enter-message mt-3">
+                          Please enter your message for our team and <br />
+                          we will get back to you ASAP.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <span class="span-indicates d-flex justify-content-end mt-4"
+                      >* indicates a required field</span
+                    >
+                    <label for="name" class="span-indicates">Name *</label
+                    ><br />
+                    <input
+                      type="text"
+                      name="name"
+                      class="w-100"
+                      placeholder="Enter your name..."
+                    /><br />
+                    <label for="email" class="span-indicates mt-2"
+                      >Email *</label
+                    ><br />
+                    <input
+                      type="email"
+                      name="email"
+                      class="w-100"
+                      placeholder="Enter your email..."
+                    />
+                    <label for="message" class="span-indicates mt-2"
+                      >Message *</label
+                    ><br />
+                    <textarea name="message" class="w-100"></textarea>
+                    <button
+                      type="submit"
+                      class="w-100 text-center text-white mt-2"
+                    >
+                      SEND
+                    </button>
+                    <div class="powered-div mt-2 d-flex justify-content-end">
+                      <span class="span-powered">powered by </span>
+                      <img src="img/olark-logo-img.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button-message">
+                <img src="img/message.png" class="img-message" />
+                <span class="span-contact-us">Contact Us</span>
+                <svg
+                  class="svg-close position-absolute display-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="#FFFFFF"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.weatherapi.com/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58a7f82d2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="signup.css" />
+    <title>Signup - WeatherAPI.com</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-header">
+      <div class="container-fluid">
+        <img src="img/logo.png" class="img-logo ms-1" />
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="navbar-collapse-before">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apiexplorer.html">API Explorer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weather.html">Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="sign-up-content">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>Sign Up</h1>
+            <h6 class="fw-bold">
+              Note:<span class="span-field-required">
+                All the fields are required!</span
+              >
+            </h6>
+            <label for="email" class="mt-2"
+              >Email(<span class="span-email">Your email is your username</span
+              >)</label
+            >
+            <input
+              type="email"
+              name="email"
+              class="w-100 mt-2"
+              placeholder="e.g.: Jane@Doe.com"
+            />
+            <label for="retype-email" class="mt-3">Retype Email</label>
+            <input
+              type="email"
+              name="retype-email"
+              class="w-100 mt-2"
+              placeholder="e.g.: Jane@Doe.com"
+            />
+            <label for="password" class="label-password">Password</label>
+            <input type="password" name="password" class="w-100 mt-2" />
+            <label for="retype-password" class="mt-3">Retype Password</label>
+            <input type="password" name="retype-password" class="w-100 mt-2" />
+
+            <input type="checkbox" class="mt-4" /><span
+              class="span-checkbox mt-4 ms-1"
+              >I have read and agree to<a href="termscondition.html">T&C's</a>
+              and
+              <a href="privacypolicy.html">Privacy Policy</a>.</span
+            ><br />
+            <button type="submit" class="mt-3 text-white">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-easy-signup mt-5 position-relative">
+      <div class="side-left-skew"></div>
+      <div class="side-right-skew"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h3 class="text-center text-white pt-5 h3-quick-easy">
+              Quick and Easy Signup for Free Weather API
+            </h3>
+            <p class="text-center text-white p-quick-easy">
+              WeatherAPI.com makes it super easy to integrate our realtime and
+              weather forecast data, historical weather, air quality data,
+              autocomplete, time zone, astronomy and sports data into your new
+              or existing project.
+            </p>
+            <a href="signup.html" class="text-decoration-none">
+              <button
+                type="button"
+                class="button-get-started-three mx-auto d-block"
+              >
+                <span>Get Started</span>
+                <i
+                  class="fa-solid fa-circle-right img-get-started-three"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer mt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <h6 class="h6-footer">Developers</h6>
+            <nav class="nav flex-column nav-footer">
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">APIs</a>
+              <a class="nav-link" href="#">Docs</a>
+              <a class="nav-link" href="#">Github</a>
+              <a class="nav-link" href="#">Weather</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Climately.com</a>
+              <a class="nav-link" href="#">TheGlobalWeather.com</a>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <nav class="nav flex-column nav-footer-two">
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Privacy</a>
+              <a class="nav-link" href="#">Terms of Services</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-12">
+            <span class="span-footer"
+              >Popular Holiday Destinations: <a href="#"> Gran Canaria</a> |
+              <a href="#">Tenerife</a> | <a href="#">Majorca</a> |
+              <a href="#">Lanzarote</a> | <a href="#">Fuerteventura</a> |
+              <a href="#">Crete</a> | <a href="#">New York</a> |
+              <a href="#">Rome</a> | <a href="#">Dubai</a> |
+              <a href="#">London</a> | <a href="#">Sydney</a> |
+              <a href="#">Moscow</a></span
+            >
+            <hr />
+          </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-lg-12">
+            <p class="p-footer text-center">
+              Copyright © <a href="home.html">Weather API</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="icon-footer d-flex justify-content-center mb-5">
+              <div class="circle-social-media">
+                <a href="https://github.com/weatherapicom/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://twitter.com/weatherapidev/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://www.facebook.com/weatherapidev"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="contact-us">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-us-div d-flex justify-content-end">
+              <div class="contact-us-box position-absolute pb-2 display-none">
+                <div class="col-lg-12">
+                  <div class="title-contact-us-box">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p class="text-white p-contact-us">Contact us!</p>
+                        <p class="text-white p-enter-message mt-3">
+                          Please enter your message for our team and <br />
+                          we will get back to you ASAP.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <span class="span-indicates d-flex justify-content-end mt-4"
+                      >* indicates a required field</span
+                    >
+                    <label for="name" class="span-indicates">Name *</label
+                    ><br />
+                    <input
+                      type="text"
+                      name="name"
+                      class="w-100"
+                      placeholder="Enter your name..."
+                    /><br />
+                    <label for="email" class="span-indicates mt-2"
+                      >Email *</label
+                    ><br />
+                    <input
+                      type="email"
+                      name="email"
+                      class="w-100"
+                      placeholder="Enter your email..."
+                    />
+                    <label for="message" class="span-indicates mt-2"
+                      >Message *</label
+                    ><br />
+                    <textarea name="message" class="w-100"></textarea>
+                    <button
+                      type="submit"
+                      class="w-100 text-center text-white mt-2"
+                    >
+                      SEND
+                    </button>
+                    <div class="powered-div mt-2 d-flex justify-content-end">
+                      <span class="span-powered">powered by </span>
+                      <img src="img/olark-logo-img.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button-message">
+                <img src="img/message.png" class="img-message" />
+                <span class="span-contact-us">Contact Us</span>
+                <svg
+                  class="svg-close position-absolute display-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="#FFFFFF"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>

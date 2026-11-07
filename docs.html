@@ -1,0 +1,3040 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.weatherapi.com/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="ScrollSpy.js-master/ScrollSpy.css" />
+    <script src="ScrollSpy.js-master/ScrollSpy.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58a7f82d2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="docs.css" />
+    <title>
+      Weather and Geolocation API - Weather and Geolocation API JSON and XML -
+      WeatherAPI.com
+    </title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-header">
+      <div class="container-fluid">
+        <button type="button" class="navbar-sidebar ms-2 opacity-0">
+          <div class="line-two"></div>
+          <div class="line-two"></div>
+          <div class="line-two"></div>
+        </button>
+        <img src="img/logo.png" class="img-logo" />
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="navbar-collapse-before">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apiexplorer.html">API Explorer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weather.html">Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="scrollspy-content">
+      <div class="row justify-content-center">
+        <div class="col-xxl-3">
+          <div class="template-sidebar position-fixed bg-white">
+            <div class="indicator"></div>
+          </div>
+        </div>
+        <div class="col-xxl-9 col-xl-10 col-lg-10 col-md-10 col-sm-10">
+          <div class="div-for-button d-flex justify-content-end">
+            <a href="login.html"
+              ><button class="btn-my-account text-white">My Account</button></a
+            >
+          </div>
+
+          <section
+            class="scrollspy scrollspy-title"
+            spy-title="Introduction"
+            id="introduction"
+          >
+            <div class="col-xxl-11">
+              <h1 class="h1-scrollspy">Introduction</h1>
+              <p class="p-scrollspy mt-4">
+                WeatherAPI.com provides access to weather and geo data via a
+                JSON/XML restful API. It allows developers to create desktop,
+                web and mobile applications using this data very easy.
+              </p>
+              <p class="p-scrollspy">
+                We provide following data through our API:
+              </p>
+              <ul class="p-scrollspy ul-scrollspy-one">
+                <li>Real-time weather</li>
+                <li>14 day weather forecast</li>
+                <li>Historical weather</li>
+                <li>
+                  Future Weather (Upto 300 days ahead)
+                  <span class="badge rounded-pill bg-danger badge-new"
+                    >New</span
+                  >
+                </li>
+                <li>Daily and hourly intervals</li>
+                <li>
+                  15 min interval<span
+                    class="badge rounded-pill bg-danger badge-new ms-1"
+                    >New</span
+                  >(Enterprise only)
+                </li>
+                <li>Astronomy</li>
+                <li>Time zone</li>
+                <li>Sports</li>
+                <li>Location data</li>
+                <li>Search or Autocomplete API</li>
+                <li>
+                  Weather Alerts<span
+                    class="badge rounded-pill bg-danger badge-new ms-1"
+                    >New</span
+                  >
+                </li>
+                <li>
+                  Air Quality Data<span
+                    class="badge rounded-pill bg-danger badge-new ms-1"
+                    >New</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Getting Started">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-5">Getting Started</h2>
+              <p class="p-scrollspy mt-3">
+                You need to <a href="signup.html">signup</a> and then you can
+                find your API key under <a href="login.html">your account</a>,
+                and start using API right away!
+              </p>
+              <p class="p-scrollspy">
+                Try our weather API by using interactive
+                <a href="apiexplorer.html">API Explorer</a>.
+              </p>
+              <p class="p-scrollspy">
+                We also have SDK for popular framework/languages
+                <a href="https://github.com/weatherapicom/"
+                  >available on Github for quick integrations</a
+                >.
+              </p>
+              <p class="p-scrollspy">
+                If you find any features missing or have any suggestions, please
+                <a href="contact.html">contact us</a>.
+              </p>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Authentication">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Authentication</h2>
+              <p class="p-scrollspy mt-3">
+                API access to the data is protected by an API key. If at
+                anytime, you find the API key has become vulnerable, please
+                regenerates the key using Regenerates button next to the API
+                key.
+              </p>
+              <p class="p-scrollspy mt-4">
+                Authentication to the WeatherAPI.com API is provided by passing
+                your API key as request parameter through an API .
+              </p>
+              <h3 class="h3-scrollspy">key parameter</h3>
+              <p class="p-scrollspy">key="YOUR API KEY"</p>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Request">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Request</h2>
+              <h5 class="h5-scrollspy mt-3">Request URL</h5>
+              <p class="p-scrollspy">
+                Request to WeatherAPI.com API consists of base url and API
+                method. You can make both HTTP or HTTPS request to our API.
+              </p>
+              <p class="p-scrollspy">
+                Base URL: <a href="#">http://api.weatherapi.com/v1</a>
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>API</th>
+                    <th>API Method</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Current weather</td>
+                    <td>/current.json or /current.xml</td>
+                  </tr>
+                  <tr>
+                    <td>Forecast</td>
+                    <td>/forecast.json or /forecast.xml</td>
+                  </tr>
+                  <tr>
+                    <td>Search or Autocomplete</td>
+                    <td>/search.json or /search.xml</td>
+                  </tr>
+                  <tr>
+                    <td>History</td>
+                    <td>/history.json or /history.xml</td>
+                  </tr>
+                  <tr>
+                    <td>Future</td>
+                    <td>/future.json or /future.xml</td>
+                  </tr>
+                  <tr>
+                    <td>Time Zone</td>
+                    <td>/timezone.json or /timezone.xml</td>
+                  </tr>
+                  <tr>
+                    <td>Sports</td>
+                    <td>/sports.json or /sports.xml</td>
+                  </tr>
+                  <tr>
+                    <td>Astronomy</td>
+                    <td>/astronomy.json or /astronomy.xml</td>
+                  </tr>
+                  <tr>
+                    <td>IP Lookup</td>
+                    <td>/ip.json or /ip.xml</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">Request Parameters</h4>
+              <div class="table-responsive">
+                <table class="table table-bordered table-request-url">
+                  <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th></th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>key</td>
+                      <td>Required</td>
+                      <td>API Key</td>
+                    </tr>
+                    <tr>
+                      <td>q</td>
+                      <td>Required</td>
+                      <td>
+                        Query parameter based on which data is sent back. It
+                        could be following:
+                        <ul class="ul-scrollspy-two">
+                          <li>
+                            Latitude and Longitude (Decimal degree) e.g:
+                            q=48.8567,2.3508
+                          </li>
+                          <li>city name e.g.: q=Paris</li>
+                          <li>US zip e.g.: q=10001</li>
+                          <li>UK postcode e.g: q=SW1</li>
+                          <li>Canada postal code e.g: q=G2J</li>
+                          <li>metar: metar code e.g: q=metar:EGLL</li>
+                          <li>iata: 3 digit airport code> e.g: q=iata:DXB</li>
+                          <li>auto:ip IP lookup e.g: q=auto:ip</li>
+                          <li>
+                            IP address (IPv4 and IPv6 supported) e.g:
+                            q=100.0.0.1
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>days</td>
+                      <td>Required only with forecast API method.</td>
+                      <td>
+                        <p>Number of days of forecast required.</p>
+                        <p>
+                          days parameter value ranges between 1 and 14. e.g:
+                          days=5
+                        </p>
+                        <p>
+                          If no days parameter is provided then only today's
+                          weather is returned.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>dt (Required for History and Future API)</td>
+                      <td>
+                        Restrict date output for Forecast and History API
+                        method.
+                      </td>
+                      <td>
+                        <p>
+                          For history API 'dt' should be on or after 1st Jan,
+                          2010 in yyyy-MM-dd format (i.e. dt=2010-01-01)
+                        </p>
+                        <p>
+                          For forecast API 'dt' should be between today and next
+                          14 day in yyyy-MM-dd format (i.e. dt=2010-01-01)
+                        </p>
+                        <p>
+                          For future API 'dt' should be between 14 days and 300
+                          days from today in the future in yyyy-MM-dd format
+                          (i.e. dt=2023-01-01)
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(Optional) unixdt</td>
+                      <td>
+                        Unix Timestamp used by Forecast and History API method.
+                      </td>
+                      <td>
+                        unixdt has same restriction as 'dt' parameter. Please
+                        either pass 'dt' or 'unixdt' and not both in same
+                        request. e.g.: unixdt=1490227200
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(Optional) end_dt (Available for History API)</td>
+                      <td>Restrict date output for History API method.</td>
+                      <td>
+                        <p>
+                          For history API 'end_dt' should be on or after 1st
+                          Jan, 2010 in yyyy-MM-dd format (i.e. dt=2010-01-01)
+                        </p>
+                        <p>
+                          'end_dt' should be greater than 'dt' parameter and
+                          difference should not be more than 30 days between the
+                          two dates.
+                        </p>
+                        <p class="p-only-works">
+                          Only works for API on Pro plan and above.
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(Optional) unixend_dt</td>
+                      <td>Unix Timestamp used by History API method.</td>
+                      <td>
+                        unixend_dt has same restriction as 'end_dt' parameter.
+                        Please either pass 'end_dt' or 'unixend_dt' and not both
+                        in same request. e.g.: unixend_dt=1490227200
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>(Optional) hour</td>
+                      <td>
+                        Restricting forecast or history output to a specific
+                        hour in a given day.
+                      </td>
+                      <td>
+                        Must be in 24 hour. For example 5 pm should be hour=17,
+                        6 am as hour=6
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        (Optional) alerts
+                        <span
+                          class="badge rounded-pill bg-danger badge-new ms-1"
+                          >New</span
+                        >
+                      </td>
+                      <td>Disable alerts in forecast API output</td>
+                      <td>alerts=yes or alerts=no</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        (Optional) aqi
+                        <span
+                          class="badge rounded-pill bg-danger badge-new ms-1"
+                          >New</span
+                        >
+                      </td>
+                      <td>
+                        Enable/Disable Air Quality data in forecast API output
+                      </td>
+                      <td>aqi=yes or aqi=no</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        (Optional) tp
+                        <span
+                          class="badge rounded-pill bg-danger badge-new ms-1"
+                          >New</span
+                        >
+                      </td>
+                      <td>
+                        Get 15 min interval data for Forecast and History API.
+                        Available for Enterprise clients only.
+                      </td>
+                      <td>tp=15</td>
+                    </tr>
+                    <tr>
+                      <td>(Optional) lang</td>
+                      <td>
+                        Returns 'condition:text' field in API in the desired
+                        language
+                      </td>
+                      <td>
+                        Please pass 'lang code' from below table. e.g.: lang=fr
+                        <table
+                          class="table table-bordered table-striped table-request-url mt-3"
+                        >
+                          <thead>
+                            <tr>
+                              <th>Language</th>
+                              <th>lang code</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Arabic</td>
+                              <td>ar</td>
+                            </tr>
+                            <tr>
+                              <td>Bengali</td>
+                              <td>bn</td>
+                            </tr>
+                            <tr>
+                              <td>Bulgarian</td>
+                              <td>bg</td>
+                            </tr>
+                            <tr>
+                              <td>Chinese Simplified</td>
+                              <td>zh</td>
+                            </tr>
+                            <tr>
+                              <td>Chinese Traditional</td>
+                              <td>zh_tw</td>
+                            </tr>
+                            <tr>
+                              <td>Czech</td>
+                              <td>cs</td>
+                            </tr>
+                            <tr>
+                              <td>Danish</td>
+                              <td>da</td>
+                            </tr>
+                            <tr>
+                              <td>Dutch</td>
+                              <td>nl</td>
+                            </tr>
+                            <tr>
+                              <td>Finnish</td>
+                              <td>fi</td>
+                            </tr>
+                            <tr>
+                              <td>French</td>
+                              <td>fr</td>
+                            </tr>
+                            <tr>
+                              <td>German</td>
+                              <td>de</td>
+                            </tr>
+                            <tr>
+                              <td>Greek</td>
+                              <td>el</td>
+                            </tr>
+                            <tr>
+                              <td>Hindi</td>
+                              <td>hi</td>
+                            </tr>
+                            <tr>
+                              <td>Hungarian</td>
+                              <td>hu</td>
+                            </tr>
+                            <tr>
+                              <td>Italian</td>
+                              <td>it</td>
+                            </tr>
+                            <tr>
+                              <td>Japanese</td>
+                              <td>ja</td>
+                            </tr>
+                            <tr>
+                              <td>Javanese</td>
+                              <td>jv</td>
+                            </tr>
+                            <tr>
+                              <td>Korean</td>
+                              <td>ko</td>
+                            </tr>
+                            <tr>
+                              <td>Mandarin</td>
+                              <td>zh_cmn</td>
+                            </tr>
+                            <tr>
+                              <td>Marathi</td>
+                              <td>mr</td>
+                            </tr>
+                            <tr>
+                              <td>Polish</td>
+                              <td>pl</td>
+                            </tr>
+                            <tr>
+                              <td>Portuguese</td>
+                              <td>pt</td>
+                            </tr>
+                            <tr>
+                              <td>Punjabi</td>
+                              <td>pa</td>
+                            </tr>
+                            <tr>
+                              <td>Romanian</td>
+                              <td>ro</td>
+                            </tr>
+                            <tr>
+                              <td>Russian</td>
+                              <td>ru</td>
+                            </tr>
+                            <tr>
+                              <td>Serbian</td>
+                              <td>sr</td>
+                            </tr>
+                            <tr>
+                              <td>Sinhalese</td>
+                              <td>si</td>
+                            </tr>
+                            <tr>
+                              <td>Slovak</td>
+                              <td>sk</td>
+                            </tr>
+                            <tr>
+                              <td>Spanish</td>
+                              <td>es</td>
+                            </tr>
+                            <tr>
+                              <td>Swedish</td>
+                              <td>sv</td>
+                            </tr>
+                            <tr>
+                              <td>Tamil</td>
+                              <td>ta</td>
+                            </tr>
+                            <tr>
+                              <td>Telugu</td>
+                              <td>te</td>
+                            </tr>
+                            <tr>
+                              <td>Turkish</td>
+                              <td>tr</td>
+                            </tr>
+                            <tr>
+                              <td>Ukrainian</td>
+                              <td>uk</td>
+                            </tr>
+                            <tr>
+                              <td>Urdu</td>
+                              <td>ur</td>
+                            </tr>
+                            <tr>
+                              <td>Vietnamese</td>
+                              <td>vi</td>
+                            </tr>
+                            <tr>
+                              <td>Wu (Shanghainese)</td>
+                              <td>zh_wuu</td>
+                            </tr>
+                            <tr>
+                              <td>Xiang</td>
+                              <td>zh_hsn</td>
+                            </tr>
+                            <tr>
+                              <td>Yue (Cantonese)</td>
+                              <td>zh_yue</td>
+                            </tr>
+                            <tr>
+                              <td>Zulu</td>
+                              <td>zu</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr />
+            </div>
+          </section>
+
+          <section
+            class="scrollspy"
+            spy-title="Location Object"
+            id="location-object"
+          >
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Location Object</h2>
+              <p class="p-scrollspy mt-3">
+                Location object is returned with each API response. It is
+                actually the matched location for which the information has been
+                returned.
+              </p>
+              <p class="p-scrollspy p-margin">
+                It returns information about the location including geo points,
+                name, region, country and time zone information as well.
+              </p>
+              <p class="p-scrollspy p-italic p-margin">
+                When using
+                <a href="#search-autocomplete-api"
+                  >Search or Autocomplete API</a
+                >
+                following fields are NOT returned tz_id, localtime_epoch and
+                localtime.
+              </p>
+              <table class="table table-bordered table-request-url p-margin">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>lat</td>
+                    <td>decimal</td>
+                    <td>Latitude in decimal degree</td>
+                  </tr>
+                  <tr>
+                    <td>lon</td>
+                    <td>decimal</td>
+                    <td>Longitude in decimal degree</td>
+                  </tr>
+                  <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>Location name</td>
+                  </tr>
+                  <tr>
+                    <td>region</td>
+                    <td>string</td>
+                    <td>Region or state of the location, if availa</td>
+                  </tr>
+                  <tr>
+                    <td>country</td>
+                    <td>string</td>
+                    <td>Location country</td>
+                  </tr>
+                  <tr>
+                    <td>tz_id</td>
+                    <td>string</td>
+                    <td>Time zone name</td>
+                  </tr>
+                  <tr>
+                    <td>localtime_epoch</td>
+                    <td>int</td>
+                    <td>Local date and time in unix time</td>
+                  </tr>
+                  <tr>
+                    <td>localtime</td>
+                    <td>string</td>
+                    <td>Local date and time</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Weather Alerts">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Weather Alerts</h2>
+              <p class="p-scrollspy mt-3">
+                <a href="#forecast-api">Forecast API</a> returns alerts and
+                warnings issued by government agencies (USA, UK, Europe and Rest
+                of the World) as an array if availables for the location
+                provided through the <a href="#forecast-api">Forecast API</a>.
+              </p>
+              <p class="p-scrollspy mt-3">
+                By default alerts are not returned. To get alerts back in the
+                response from <a href="#forecast-api">Forecast API</a>, pass the
+                parameter <span class="span-bold">alerts=yes</span>.
+              </p>
+              <p class="p-scrollspy mt-3">
+                Note: Some of the alerts may be in local language of the
+                location.
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>headline</td>
+                    <td>string</td>
+                    <td>Alert headline</td>
+                  </tr>
+                  <tr>
+                    <td>msgType</td>
+                    <td>string</td>
+                    <td>Type of alert</td>
+                  </tr>
+                  <tr>
+                    <td>severity</td>
+                    <td>string</td>
+                    <td>Severity of alert</td>
+                  </tr>
+                  <tr>
+                    <td>urgency</td>
+                    <td>string</td>
+                    <td>Urgency</td>
+                  </tr>
+                  <tr>
+                    <td>areas</td>
+                    <td>string</td>
+                    <td>Areas covered</td>
+                  </tr>
+                  <tr>
+                    <td>category</td>
+                    <td>string</td>
+                    <td>Category</td>
+                  </tr>
+                  <tr>
+                    <td>certainty</td>
+                    <td>string</td>
+                    <td>Certainty</td>
+                  </tr>
+                  <tr>
+                    <td>event</td>
+                    <td>string</td>
+                    <td>Event</td>
+                  </tr>
+                  <tr>
+                    <td>note</td>
+                    <td>string</td>
+                    <td>Note</td>
+                  </tr>
+                  <tr>
+                    <td>effective</td>
+                    <td>date</td>
+                    <td>Effective</td>
+                  </tr>
+                  <tr>
+                    <td>expires</td>
+                    <td>string</td>
+                    <td>Expires</td>
+                  </tr>
+                  <tr>
+                    <td>desc</td>
+                    <td>string</td>
+                    <td>Description</td>
+                  </tr>
+                  <tr>
+                    <td>instruction</td>
+                    <td>string</td>
+                    <td>Instruction</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h4 class="h4-scrollspy">Example response of alerts</h4>
+              <img
+                src="img/example-response-of-alerts.png"
+                class="img-example-response mt-4"
+              />
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Air Quality">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Air Quality Data</h2>
+              <p class="p-scrollspy mt-3">
+                Air Quality data is returned in the
+                <a href="#forecast-api">Forecast API</a> and
+                <a href="#realtime-api">Realtime API</a> response. Depending
+                upon your subscription plan we provide current and 3 day air
+                quality data for the given location in json and xml.
+              </p>
+              <p class="p-scrollspy mt-3">
+                It provides air quality index (see below) data on major
+                pollutant gases like Carbon monoxide (CO), Ozone (O3), Nitrogen
+                dioxide (NO2), Sulphur dioxide (SO2), PM 2.5 and PM 10.
+              </p>
+              <p class="p-scrollspy mt-3">
+                By default air quality data is not returned. To get air quality
+                data back in the response from
+                <a href="#forecast-api">Forecast API</a> and
+                <a href="#realtime-api">Realtime API</a>, pass the parameter
+                <span class="span-bold">aqi=yes</span>.
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>co</td>
+                    <td>float</td>
+                    <td>Carbon Monoxide (μg/m3)</td>
+                  </tr>
+                  <tr>
+                    <td>o3</td>
+                    <td>float</td>
+                    <td>Ozone (μg/m3)</td>
+                  </tr>
+                  <tr>
+                    <td>no2</td>
+                    <td>float</td>
+                    <td>Nitrogen dioxide (μg/m3)</td>
+                  </tr>
+                  <tr>
+                    <td>so2</td>
+                    <td>float</td>
+                    <td>Sulphur dioxide (μg/m3)</td>
+                  </tr>
+                  <tr>
+                    <td>pm2_5</td>
+                    <td>float</td>
+                    <td>PM2.5 (μg/m3)</td>
+                  </tr>
+                  <tr>
+                    <td>pm10</td>
+                    <td>float</td>
+                    <td>PM10 (μg/m3)</td>
+                  </tr>
+                  <tr>
+                    <td>us-epa-index</td>
+                    <td>integer</td>
+                    <td>
+                      <p>US - EPA standard.</p>
+                      <ul class="ul-scrollspy-three">
+                        <li>1 means Good</li>
+                        <li>2 means Moderate</li>
+                        <li>3 means Unhealthy for sensitive group</li>
+                        <li>4 means Unhealthy</li>
+                        <li>5 means Very Unhealthy</li>
+                        <li>6 means Hazardous</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>gb-defra-index</td>
+                    <td>integer</td>
+                    <td>UK Defra Index (See table below)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">UK DEFRA INDEX Table</h4>
+              <div class="table-responsive">
+                <table class="table table-bordered table-request-url">
+                  <thead>
+                    <tr>
+                      <th>Index</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                      <th>5</th>
+                      <th>6</th>
+                      <th>7</th>
+                      <th>8</th>
+                      <th>9</th>
+                      <th>10</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-bold">Band</td>
+                      <td>Low</td>
+                      <td>Low</td>
+                      <td>Low</td>
+                      <td>Moderate</td>
+                      <td>Moderate</td>
+                      <td>Moderate</td>
+                      <td>High</td>
+                      <td>High</td>
+                      <td>High</td>
+                      <td>Very High</td>
+                    </tr>
+                    <tr>
+                      <td class="td-bold">
+                        <p>µgm<sup>-3</sup></p>
+                      </td>
+                      <td>0-11</td>
+                      <td>12-23</td>
+                      <td>24-35</td>
+                      <td>36-41</td>
+                      <td>42-47</td>
+                      <td>48-53</td>
+                      <td>54-58</td>
+                      <td>59-64</td>
+                      <td>65-70</td>
+                      <td>71 or more</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Bulk Request">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Bulk Request</h2>
+              <p class="p-scrollspy mt-3">
+                We have launched our new web service to provide
+                <a href="https://www.climately.com/"
+                  >global bulk csv weather API</a
+                >.
+              </p>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="API Error Codes">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">API Error Codes</h2>
+              <p class="p-scrollspy mt-3">
+                If there is an error, API response contains error message
+                including error code for following 4xx HTTP Status codes.
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>HTTP Status Code</th>
+                    <th>Error code</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>401</td>
+                    <td>1002</td>
+                    <td>API key not provided.</td>
+                  </tr>
+                  <tr>
+                    <td>400</td>
+                    <td>1003</td>
+                    <td>Parameter 'q' not provided.</td>
+                  </tr>
+                  <tr>
+                    <td>400</td>
+                    <td>1005</td>
+                    <td>API request url is invalid</td>
+                  </tr>
+                  <tr>
+                    <td>400</td>
+                    <td>1006</td>
+                    <td>No location found matching parameter 'q'</td>
+                  </tr>
+                  <tr>
+                    <td>401</td>
+                    <td>2006</td>
+                    <td>API key provided is invalid</td>
+                  </tr>
+                  <tr>
+                    <td>403</td>
+                    <td>2007</td>
+                    <td>API key has exceeded calls per month quota.</td>
+                  </tr>
+                  <tr>
+                    <td>403</td>
+                    <td>2008</td>
+                    <td>API key has been disabled.</td>
+                  </tr>
+                  <tr>
+                    <td>400</td>
+                    <td>9999</td>
+                    <td>Internal application error.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy scrollspy-title" spy-title="APIs" id="apis">
+            <div class="col-xxl-11">
+              <h1 class="h1-scrollspy mt-5">APIs</h1>
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Realtime API" id="realtime-api">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-5">Realtime API</h2>
+              <p class="p-scrollspy mt-3">
+                Current weather or realtime weather API method allows a user to
+                get up to date current weather information in json and xml. The
+                data is returned as a Current Object.
+              </p>
+              <p class="p-scrollspy">
+                Current object contains current or realtime weather information
+                for a given city.
+              </p>
+              <table class="table table-bordered table-request-url p-margin">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>last_updated</td>
+                    <td>string</td>
+                    <td>Local time when the real time data was updated.</td>
+                  </tr>
+                  <tr>
+                    <td>last_updated_epoch</td>
+                    <td>int</td>
+                    <td>
+                      Local time when the real time data was updated in unix
+                      time.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>temp_c</td>
+                    <td>decimal</td>
+                    <td>Temperature in celsius</td>
+                  </tr>
+                  <tr>
+                    <td>temp_f</td>
+                    <td>decimal</td>
+                    <td>Temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_c</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature in celsius</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_f</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>condition:text</td>
+                    <td>string</td>
+                    <td>Weather condition text</td>
+                  </tr>
+                  <tr>
+                    <td>condition:icon</td>
+                    <td>string</td>
+                    <td>Weather icon url</td>
+                  </tr>
+                  <tr>
+                    <td>condition:code</td>
+                    <td>int</td>
+                    <td>Weather condition unique code.</td>
+                  </tr>
+                  <tr>
+                    <td>wind_mph</td>
+                    <td>decimal</td>
+                    <td>Wind speed in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_kph</td>
+                    <td>decimal</td>
+                    <td>Wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_degree</td>
+                    <td>int</td>
+                    <td>Wind direction in degrees</td>
+                  </tr>
+                  <tr>
+                    <td>wind_dir</td>
+                    <td>string</td>
+                    <td>Wind direction as 16 point compass. e.g.: NSW</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_mb</td>
+                    <td>decimal</td>
+                    <td>Pressure in millibars</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_in</td>
+                    <td>decimal</td>
+                    <td>Pressure in inches</td>
+                  </tr>
+                  <tr>
+                    <td>precip_mm</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in millimeters</td>
+                  </tr>
+                  <tr>
+                    <td>precip_in</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in inches</td>
+                  </tr>
+                  <tr>
+                    <td>humidity</td>
+                    <td>int</td>
+                    <td>Humidity as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>cloud</td>
+                    <td>int</td>
+                    <td>Cloud cover as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>is_day</td>
+                    <td>int</td>
+                    <td>
+                      1 = Yes 0 = No Whether to show day condition icon or night
+                      icon
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>uv</td>
+                    <td>decimal</td>
+                    <td>UV Index</td>
+                  </tr>
+                  <tr>
+                    <td>gust_mph</td>
+                    <td>decimal</td>
+                    <td>Wind gust in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>gust_kph</td>
+                    <td>decimal</td>
+                    <td>Wind gust in kilometer per hour</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Forecast API" id="forecast-api">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Forecast API</h2>
+              <p class="p-scrollspy mt-3">
+                Forecast weather API method returns upto next 14 day weather
+                forecast and weather alert as json. The data is returned as a
+                Forecast Object.
+              </p>
+              <p class="p-scrollspy p-margin">
+                Forecast object contains astronomy data, day weather forecast
+                and hourly interval weather information for a given city.
+              </p>
+              <p class="p-scrollspy p-margin">forecastday: Parent element</p>
+              <p class="p-scrollspy p-margin">
+                forecastday -> day: 'day' element inside forecastday contains
+                max/min temperature, average temperature
+              </p>
+              <p class="p-scrollspy p-margin">forecastday -> astro</p>
+              <p class="p-scrollspy">forecastday -> hour:</p>
+              <table class="table table-bordered table-request-url p-margin">
+                <thead>
+                  <tr>
+                    <th>Forecastday</th>
+                    <th>Parent element</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>forecastday -> day</td>
+                    <td>
+                      <p>day element contains:</p>
+                      <ul class="ul-scrollspy-three">
+                        <li>Max, min and average temperature</li>
+                        <li>Max wind speed</li>
+                        <li>Total precipitation</li>
+                        <li>Day weather condition</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>forecastday -> astro</td>
+                    <td>
+                      astro element contains sunrise, sunset, moonrise and
+                      moonset data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>forecastday -> hour</td>
+                    <td>
+                      hour element contains hour by hour weather forecast
+                      information
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">forecastday</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>date</td>
+                    <td>string</td>
+                    <td>Forecast date</td>
+                  </tr>
+                  <tr>
+                    <td>date_epoch</td>
+                    <td>int</td>
+                    <td>Forecast date as unix time.</td>
+                  </tr>
+                  <tr>
+                    <td>day</td>
+                    <td>element</td>
+                    <td>See day element</td>
+                  </tr>
+                  <tr>
+                    <td>astro</td>
+                    <td>element</td>
+                    <td>See astro element</td>
+                  </tr>
+                  <tr>
+                    <td>hour</td>
+                    <td>element</td>
+                    <td>See hour element</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">day Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>maxtemp_c</td>
+                    <td>decimal</td>
+                    <td>Maximum temperature in celsius for the day.</td>
+                  </tr>
+                  <tr>
+                    <td>maxtemp_f</td>
+                    <td>decimal</td>
+                    <td>Maximum temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>mintemp_c</td>
+                    <td>decimal</td>
+                    <td>Minimum temperature in celsius for the day</td>
+                  </tr>
+                  <tr>
+                    <td>mintemp_f</td>
+                    <td>decimal</td>
+                    <td>Minimum temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>avgtemp_c</td>
+                    <td>decimal</td>
+                    <td>Average temperature in celsius for the day</td>
+                  </tr>
+                  <tr>
+                    <td>avgtemp_f</td>
+                    <td>decimal</td>
+                    <td>Average temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_mph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>totalprecip_mm</td>
+                    <td>decimal</td>
+                    <td>Total precipitation in milimeter</td>
+                  </tr>
+                  <tr>
+                    <td>totalprecip_in</td>
+                    <td>decimal</td>
+                    <td>Total precipitation in inches</td>
+                  </tr>
+                  <tr>
+                    <td>avgvis_km</td>
+                    <td>decimal</td>
+                    <td>Average visibility in kilometer</td>
+                  </tr>
+                  <tr>
+                    <td>avgvis_miles</td>
+                    <td>decimal</td>
+                    <td>Average visibility in miles</td>
+                  </tr>
+                  <tr>
+                    <td>avghumidity</td>
+                    <td>int</td>
+                    <td>Average humidity as percentage</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:text</a></td>
+                    <td>string</td>
+                    <td>Weather condition text</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:icon</a></td>
+                    <td>string</td>
+                    <td>Weather condition icon</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:code</a></td>
+                    <td>int</td>
+                    <td>Weather condition code</td>
+                  </tr>
+                  <tr>
+                    <td>uv</td>
+                    <td>decimal</td>
+                    <td>UV Index</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">astro Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sunrise</td>
+                    <td>string</td>
+                    <td>Sunrise time</td>
+                  </tr>
+                  <tr>
+                    <td>sunset</td>
+                    <td>string</td>
+                    <td>Sunset time</td>
+                  </tr>
+                  <tr>
+                    <td>moonrise</td>
+                    <td>string</td>
+                    <td>Moonrise time</td>
+                  </tr>
+                  <tr>
+                    <td>moonset</td>
+                    <td>string</td>
+                    <td>Moonset time</td>
+                  </tr>
+                  <tr>
+                    <td>moon_phase</td>
+                    <td>string</td>
+                    <td>
+                      <p>Moon phases. Value returned :</p>
+                      <ul class="ul-scrollspy-three">
+                        <li>New Moon</li>
+                        <li>Waxing Crescent</li>
+                        <li>First Quarter</li>
+                        <li>Waxing Gibbous</li>
+                        <li>Full Moon</li>
+                        <li>Waning Gibbous</li>
+                        <li>Last Quarter</li>
+                        <li>Waning Crescent</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>moon_illumination</td>
+                    <td>decimal</td>
+                    <td>Moon illumination as %</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">hour Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>time_epoch</td>
+                    <td>int</td>
+                    <td>Time as epoch</td>
+                  </tr>
+                  <tr>
+                    <td>time</td>
+                    <td>string</td>
+                    <td>Date and time</td>
+                  </tr>
+                  <tr>
+                    <td>temp_c</td>
+                    <td>decimal</td>
+                    <td>Temperature in celsius</td>
+                  </tr>
+                  <tr>
+                    <td>temp_f</td>
+                    <td>decimal</td>
+                    <td>Temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:text</a></td>
+                    <td>string</td>
+                    <td>Weather condition text</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:icon</a></td>
+                    <td>string</td>
+                    <td>Weather condition icon</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:code</a></td>
+                    <td>int</td>
+                    <td>Weather condition code</td>
+                  </tr>
+                  <tr>
+                    <td>wind_mph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_degree</td>
+                    <td>int</td>
+                    <td>Wind direction in degrees</td>
+                  </tr>
+                  <tr>
+                    <td>wind_dir</td>
+                    <td>string</td>
+                    <td>Wind direction as 16 point compass. e.g.: NSW</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_mb</td>
+                    <td>decimal</td>
+                    <td>Pressure in millibars</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_in</td>
+                    <td>decimal</td>
+                    <td>Pressure in inches</td>
+                  </tr>
+                  <tr>
+                    <td>precip_mm</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in millimeters</td>
+                  </tr>
+                  <tr>
+                    <td>precip_in</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in inches</td>
+                  </tr>
+                  <tr>
+                    <td>humidity</td>
+                    <td>int</td>
+                    <td>Humidity as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>cloud</td>
+                    <td>int</td>
+                    <td>Cloud cover as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_c</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature as celcius</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_f</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature as fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>windchill_c</td>
+                    <td>decimal</td>
+                    <td>Windchill temperature in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>windchill_f</td>
+                    <td>decimal</td>
+                    <td>Windchill temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>heatindex_c</td>
+                    <td>decimal</td>
+                    <td>Heat index in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>heatindex_f</td>
+                    <td>decimal</td>
+                    <td>Heat index in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>dewpoint_c</td>
+                    <td>decimal</td>
+                    <td>Dew point in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>dewpoint_f</td>
+                    <td>decimal</td>
+                    <td>Dew point in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>will_it_rain</td>
+                    <td>int</td>
+                    <td>1 = Yes 0 = No Will it will rain or not</td>
+                  </tr>
+                  <tr>
+                    <td>will_it_snow</td>
+                    <td>int</td>
+                    <td>1 = Yes 0 = No Will it snow or not</td>
+                  </tr>
+                  <tr>
+                    <td>is_day</td>
+                    <td>int</td>
+                    <td>
+                      1 = Yes 0 = No Whether to show day condition icon or night
+                      icon
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>vis_km</td>
+                    <td>decimal</td>
+                    <td>Visibility in kilometer</td>
+                  </tr>
+                  <tr>
+                    <td>vis_miles</td>
+                    <td>decimal</td>
+                    <td>Visibility in miles</td>
+                  </tr>
+                  <tr>
+                    <td>chance_of_rain</td>
+                    <td>int</td>
+                    <td>Chance of rain as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>chance_of_snow</td>
+                    <td>int</td>
+                    <td>Chance of snow as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>gust_mph</td>
+                    <td>decimal</td>
+                    <td>Wind gust in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>gust_kph</td>
+                    <td>decimal</td>
+                    <td>Wind gust in kilometer per hour</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="History API">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">History API</h2>
+              <p class="p-scrollspy mt-3">
+                History weather API method returns historical weather for a date
+                on or after 1st Jan, 2010 as json. The data is returned as a
+                Forecast Object.
+              </p>
+              <p class="p-scrollspy p-margin">
+                Forecast object contains astronomy data, day weather forecast
+                and hourly interval weather information for a given city.
+              </p>
+              <p class="p-scrollspy p-margin">forecastday: Parent element</p>
+              <p class="p-scrollspy p-margin">
+                forecastday -> day: 'day' element inside forecastday contains
+                max/min temperature, average temperature
+              </p>
+              <p class="p-scrollspy p-margin">forecastday -> astro</p>
+              <p class="p-scrollspy">forecastday -> hour:</p>
+              <table class="table table-bordered table-request-url p-margin">
+                <thead>
+                  <tr>
+                    <th>Forecastday</th>
+                    <th>Parent element</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>forecastday -> day</td>
+                    <td>
+                      <p>day element contains:</p>
+                      <ul class="ul-scrollspy-three">
+                        <li>Max, min and average temperature</li>
+                        <li>Max wind speed</li>
+                        <li>Total precipitation</li>
+                        <li>Day weather condition</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>forecastday -> astro</td>
+                    <td>
+                      astro element contains sunrise, sunset, moonrise and
+                      moonset data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>forecastday -> hour</td>
+                    <td>
+                      hour element contains hour by hour weather forecast
+                      information
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">forecastday</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>date</td>
+                    <td>string</td>
+                    <td>Forecast date</td>
+                  </tr>
+                  <tr>
+                    <td>date_epoch</td>
+                    <td>int</td>
+                    <td>Forecast date as unix time.</td>
+                  </tr>
+                  <tr>
+                    <td>day</td>
+                    <td>element</td>
+                    <td>See day element</td>
+                  </tr>
+                  <tr>
+                    <td>astro</td>
+                    <td>element</td>
+                    <td>See astro element</td>
+                  </tr>
+                  <tr>
+                    <td>hour</td>
+                    <td>element</td>
+                    <td>See hour element</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">day Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>maxtemp_c</td>
+                    <td>decimal</td>
+                    <td>Maximum temperature in celsius for the day.</td>
+                  </tr>
+                  <tr>
+                    <td>maxtemp_f</td>
+                    <td>decimal</td>
+                    <td>Maximum temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>mintemp_c</td>
+                    <td>decimal</td>
+                    <td>Minimum temperature in celsius for the day</td>
+                  </tr>
+                  <tr>
+                    <td>mintemp_f</td>
+                    <td>decimal</td>
+                    <td>Minimum temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>avgtemp_c</td>
+                    <td>decimal</td>
+                    <td>Average temperature in celsius for the day</td>
+                  </tr>
+                  <tr>
+                    <td>avgtemp_f</td>
+                    <td>decimal</td>
+                    <td>Average temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_mph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>totalprecip_mm</td>
+                    <td>decimal</td>
+                    <td>Total precipitation in milimeter</td>
+                  </tr>
+                  <tr>
+                    <td>totalprecip_in</td>
+                    <td>decimal</td>
+                    <td>Total precipitation in inches</td>
+                  </tr>
+                  <tr>
+                    <td>avgvis_km</td>
+                    <td>decimal</td>
+                    <td>Average visibility in kilometer</td>
+                  </tr>
+                  <tr>
+                    <td>avgvis_miles</td>
+                    <td>decimal</td>
+                    <td>Average visibility in miles</td>
+                  </tr>
+                  <tr>
+                    <td>avghumidity</td>
+                    <td>int</td>
+                    <td>Average humidity as percentage</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:text</a></td>
+                    <td>string</td>
+                    <td>Weather condition text</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:icon</a></td>
+                    <td>string</td>
+                    <td>Weather condition icon</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:code</a></td>
+                    <td>int</td>
+                    <td>Weather condition code</td>
+                  </tr>
+                  <tr>
+                    <td>uv</td>
+                    <td>decimal</td>
+                    <td>UV Index</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">astro Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sunrise</td>
+                    <td>string</td>
+                    <td>Sunrise time</td>
+                  </tr>
+                  <tr>
+                    <td>sunset</td>
+                    <td>string</td>
+                    <td>Sunset time</td>
+                  </tr>
+                  <tr>
+                    <td>moonrise</td>
+                    <td>string</td>
+                    <td>Moonrise time</td>
+                  </tr>
+                  <tr>
+                    <td>moonset</td>
+                    <td>string</td>
+                    <td>Moonset time</td>
+                  </tr>
+                  <tr>
+                    <td>moon_phase</td>
+                    <td>string</td>
+                    <td>
+                      <p>Moon phases. Value returned :</p>
+                      <ul class="ul-scrollspy-three">
+                        <li>New Moon</li>
+                        <li>Waxing Crescent</li>
+                        <li>First Quarter</li>
+                        <li>Waxing Gibbous</li>
+                        <li>Full Moon</li>
+                        <li>Waning Gibbous</li>
+                        <li>Last Quarter</li>
+                        <li>Waning Crescent</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>moon_illumination</td>
+                    <td>decimal</td>
+                    <td>Moon illumination as %</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">hour Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>time_epoch</td>
+                    <td>int</td>
+                    <td>Time as epoch</td>
+                  </tr>
+                  <tr>
+                    <td>time</td>
+                    <td>string</td>
+                    <td>Date and time</td>
+                  </tr>
+                  <tr>
+                    <td>temp_c</td>
+                    <td>decimal</td>
+                    <td>Temperature in celsius</td>
+                  </tr>
+                  <tr>
+                    <td>temp_f</td>
+                    <td>decimal</td>
+                    <td>Temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:text</a></td>
+                    <td>string</td>
+                    <td>Weather condition text</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:icon</a></td>
+                    <td>string</td>
+                    <td>Weather condition icon</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:code</a></td>
+                    <td>int</td>
+                    <td>Weather condition code</td>
+                  </tr>
+                  <tr>
+                    <td>wind_mph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_degree</td>
+                    <td>int</td>
+                    <td>Wind direction in degrees</td>
+                  </tr>
+                  <tr>
+                    <td>wind_dir</td>
+                    <td>string</td>
+                    <td>Wind direction as 16 point compass. e.g.: NSW</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_mb</td>
+                    <td>decimal</td>
+                    <td>Pressure in millibars</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_in</td>
+                    <td>decimal</td>
+                    <td>Pressure in inches</td>
+                  </tr>
+                  <tr>
+                    <td>precip_mm</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in millimeters</td>
+                  </tr>
+                  <tr>
+                    <td>precip_in</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in inches</td>
+                  </tr>
+                  <tr>
+                    <td>humidity</td>
+                    <td>int</td>
+                    <td>Humidity as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>cloud</td>
+                    <td>int</td>
+                    <td>Cloud cover as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_c</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature as celcius</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_f</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature as fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>windchill_c</td>
+                    <td>decimal</td>
+                    <td>Windchill temperature in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>windchill_f</td>
+                    <td>decimal</td>
+                    <td>Windchill temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>heatindex_c</td>
+                    <td>decimal</td>
+                    <td>Heat index in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>heatindex_f</td>
+                    <td>decimal</td>
+                    <td>Heat index in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>dewpoint_c</td>
+                    <td>decimal</td>
+                    <td>Dew point in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>dewpoint_f</td>
+                    <td>decimal</td>
+                    <td>Dew point in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>will_it_rain</td>
+                    <td>int</td>
+                    <td>1 = Yes 0 = No Will it will rain or not</td>
+                  </tr>
+                  <tr>
+                    <td>will_it_snow</td>
+                    <td>int</td>
+                    <td>1 = Yes 0 = No Will it snow or not</td>
+                  </tr>
+                  <tr>
+                    <td>is_day</td>
+                    <td>int</td>
+                    <td>
+                      1 = Yes 0 = No Whether to show day condition icon or night
+                      icon
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>vis_km</td>
+                    <td>decimal</td>
+                    <td>Visibility in kilometer</td>
+                  </tr>
+                  <tr>
+                    <td>vis_miles</td>
+                    <td>decimal</td>
+                    <td>Visibility in miles</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Future API">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Future Weather API</h2>
+              <p class="p-scrollspy mt-3">
+                Future weather API method returns weather in a 3 hourly interval
+                in future for a date between 14 days and 300 days from today in
+                the future.
+              </p>
+              <p class="p-scrollspy p-margin">
+                Forecast object contains astronomy data, day weather forecast
+                and hourly interval weather information for a given city.
+              </p>
+              <p class="p-scrollspy p-margin">forecastday: Parent element</p>
+              <p class="p-scrollspy p-margin">
+                forecastday -> day: 'day' element inside forecastday contains
+                max/min temperature, average temperature
+              </p>
+              <p class="p-scrollspy p-margin">forecastday -> astro</p>
+              <p class="p-scrollspy">forecastday -> hour:</p>
+              <table class="table table-bordered table-request-url p-margin">
+                <thead>
+                  <tr>
+                    <th>Forecastday</th>
+                    <th>Parent element</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>forecastday -> day</td>
+                    <td>
+                      <p>day element contains:</p>
+                      <ul class="ul-scrollspy-three">
+                        <li>Max, min and average temperature</li>
+                        <li>Max wind speed</li>
+                        <li>Total precipitation</li>
+                        <li>Day weather condition</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>forecastday -> astro</td>
+                    <td>
+                      astro element contains sunrise, sunset, moonrise and
+                      moonset data
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>forecastday -> hour</td>
+                    <td>
+                      hour element contains hour by hour weather forecast
+                      information
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">forecastday</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>date</td>
+                    <td>string</td>
+                    <td>Forecast date</td>
+                  </tr>
+                  <tr>
+                    <td>date_epoch</td>
+                    <td>int</td>
+                    <td>Forecast date as unix time.</td>
+                  </tr>
+                  <tr>
+                    <td>day</td>
+                    <td>element</td>
+                    <td>See day element</td>
+                  </tr>
+                  <tr>
+                    <td>astro</td>
+                    <td>element</td>
+                    <td>See astro element</td>
+                  </tr>
+                  <tr>
+                    <td>hour</td>
+                    <td>element</td>
+                    <td>See hour element</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">day Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>maxtemp_c</td>
+                    <td>decimal</td>
+                    <td>Maximum temperature in celsius for the day.</td>
+                  </tr>
+                  <tr>
+                    <td>maxtemp_f</td>
+                    <td>decimal</td>
+                    <td>Maximum temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>mintemp_c</td>
+                    <td>decimal</td>
+                    <td>Minimum temperature in celsius for the day</td>
+                  </tr>
+                  <tr>
+                    <td>mintemp_f</td>
+                    <td>decimal</td>
+                    <td>Minimum temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>avgtemp_c</td>
+                    <td>decimal</td>
+                    <td>Average temperature in celsius for the day</td>
+                  </tr>
+                  <tr>
+                    <td>avgtemp_f</td>
+                    <td>decimal</td>
+                    <td>Average temperature in fahrenheit for the day</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_mph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>maxwind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>totalprecip_mm</td>
+                    <td>decimal</td>
+                    <td>Total precipitation in milimeter</td>
+                  </tr>
+                  <tr>
+                    <td>totalprecip_in</td>
+                    <td>decimal</td>
+                    <td>Total precipitation in inches</td>
+                  </tr>
+                  <tr>
+                    <td>avgvis_km</td>
+                    <td>decimal</td>
+                    <td>Average visibility in kilometer</td>
+                  </tr>
+                  <tr>
+                    <td>avgvis_miles</td>
+                    <td>decimal</td>
+                    <td>Average visibility in miles</td>
+                  </tr>
+                  <tr>
+                    <td>avghumidity</td>
+                    <td>int</td>
+                    <td>Average humidity as percentage</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:text</a></td>
+                    <td>string</td>
+                    <td>Weather condition text</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:icon</a></td>
+                    <td>string</td>
+                    <td>Weather condition icon</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:code</a></td>
+                    <td>int</td>
+                    <td>Weather condition code</td>
+                  </tr>
+                  <tr>
+                    <td>uv</td>
+                    <td>decimal</td>
+                    <td>UV Index</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">astro Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sunrise</td>
+                    <td>string</td>
+                    <td>Sunrise time</td>
+                  </tr>
+                  <tr>
+                    <td>sunset</td>
+                    <td>string</td>
+                    <td>Sunset time</td>
+                  </tr>
+                  <tr>
+                    <td>moonrise</td>
+                    <td>string</td>
+                    <td>Moonrise time</td>
+                  </tr>
+                  <tr>
+                    <td>moonset</td>
+                    <td>string</td>
+                    <td>Moonset time</td>
+                  </tr>
+                  <tr>
+                    <td>moon_phase</td>
+                    <td>string</td>
+                    <td>
+                      <p>Moon phases. Value returned :</p>
+                      <ul class="ul-scrollspy-three">
+                        <li>New Moon</li>
+                        <li>Waxing Crescent</li>
+                        <li>First Quarter</li>
+                        <li>Waxing Gibbous</li>
+                        <li>Full Moon</li>
+                        <li>Waning Gibbous</li>
+                        <li>Last Quarter</li>
+                        <li>Waning Crescent</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>moon_illumination</td>
+                    <td>decimal</td>
+                    <td>Moon illumination as %</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 class="h4-scrollspy">hour Element</h4>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>time_epoch</td>
+                    <td>int</td>
+                    <td>Time as epoch</td>
+                  </tr>
+                  <tr>
+                    <td>time</td>
+                    <td>string</td>
+                    <td>Date and time</td>
+                  </tr>
+                  <tr>
+                    <td>temp_c</td>
+                    <td>decimal</td>
+                    <td>Temperature in celsius</td>
+                  </tr>
+                  <tr>
+                    <td>temp_f</td>
+                    <td>decimal</td>
+                    <td>Temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:text</a></td>
+                    <td>string</td>
+                    <td>Weather condition text</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:icon</a></td>
+                    <td>string</td>
+                    <td>Weather condition icon</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#weather-icon-codes">condition:code</a></td>
+                    <td>int</td>
+                    <td>Weather condition code</td>
+                  </tr>
+                  <tr>
+                    <td>wind_mph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in miles per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_kph</td>
+                    <td>decimal</td>
+                    <td>Maximum wind speed in kilometer per hour</td>
+                  </tr>
+                  <tr>
+                    <td>wind_degree</td>
+                    <td>int</td>
+                    <td>Wind direction in degrees</td>
+                  </tr>
+                  <tr>
+                    <td>wind_dir</td>
+                    <td>string</td>
+                    <td>Wind direction as 16 point compass. e.g.: NSW</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_mb</td>
+                    <td>decimal</td>
+                    <td>Pressure in millibars</td>
+                  </tr>
+                  <tr>
+                    <td>pressure_in</td>
+                    <td>decimal</td>
+                    <td>Pressure in inches</td>
+                  </tr>
+                  <tr>
+                    <td>precip_mm</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in millimeters</td>
+                  </tr>
+                  <tr>
+                    <td>precip_in</td>
+                    <td>decimal</td>
+                    <td>Precipitation amount in inches</td>
+                  </tr>
+                  <tr>
+                    <td>humidity</td>
+                    <td>int</td>
+                    <td>Humidity as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>cloud</td>
+                    <td>int</td>
+                    <td>Cloud cover as percentage</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_c</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature as celcius</td>
+                  </tr>
+                  <tr>
+                    <td>feelslike_f</td>
+                    <td>decimal</td>
+                    <td>Feels like temperature as fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>windchill_c</td>
+                    <td>decimal</td>
+                    <td>Windchill temperature in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>windchill_f</td>
+                    <td>decimal</td>
+                    <td>Windchill temperature in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>heatindex_c</td>
+                    <td>decimal</td>
+                    <td>Heat index in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>heatindex_f</td>
+                    <td>decimal</td>
+                    <td>Heat index in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>dewpoint_c</td>
+                    <td>decimal</td>
+                    <td>Dew point in celcius</td>
+                  </tr>
+                  <tr>
+                    <td>dewpoint_f</td>
+                    <td>decimal</td>
+                    <td>Dew point in fahrenheit</td>
+                  </tr>
+                  <tr>
+                    <td>will_it_rain</td>
+                    <td>int</td>
+                    <td>1 = Yes 0 = No Will it will rain or not</td>
+                  </tr>
+                  <tr>
+                    <td>will_it_snow</td>
+                    <td>int</td>
+                    <td>1 = Yes 0 = No Will it snow or not</td>
+                  </tr>
+                  <tr>
+                    <td>is_day</td>
+                    <td>int</td>
+                    <td>
+                      1 = Yes 0 = No Whether to show day condition icon or night
+                      icon
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>vis_km</td>
+                    <td>decimal</td>
+                    <td>Visibility in kilometer</td>
+                  </tr>
+                  <tr>
+                    <td>vis_miles</td>
+                    <td>decimal</td>
+                    <td>Visibility in miles</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section
+            class="scrollspy"
+            spy-title="Search/Autocomplete API"
+            id="search-autocomplete-api"
+          >
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Search/Autocomplete API</h2>
+              <p class="p-scrollspy">
+                WeatherAPI.com Search or Autocomplete API returns matching
+                cities and towns as an array of
+                <a href="#location-object">Location</a> object.
+              </p>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="IP Lookup API">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">IP Lookup API</h2>
+              <p class="p-scrollspy mt-3">
+                IP Lookup API method allows a user to get up to date information
+                for an IP address in json and xml.
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ip</td>
+                    <td>string</td>
+                    <td>IP address</td>
+                  </tr>
+                  <tr>
+                    <td>type</td>
+                    <td>string</td>
+                    <td>ipv4 or ipv6</td>
+                  </tr>
+                  <tr>
+                    <td>continent_code</td>
+                    <td>string</td>
+                    <td>Continent code</td>
+                  </tr>
+                  <tr>
+                    <td>continent_name</td>
+                    <td>string</td>
+                    <td>Continent name</td>
+                  </tr>
+                  <tr>
+                    <td>country_code</td>
+                    <td>string</td>
+                    <td>Country code</td>
+                  </tr>
+                  <tr>
+                    <td>country_name</td>
+                    <td>string</td>
+                    <td>Name of country</td>
+                  </tr>
+                  <tr>
+                    <td>is_eu</td>
+                    <td>bool</td>
+                    <td>true or false</td>
+                  </tr>
+                  <tr>
+                    <td>geoname_id</td>
+                    <td>string</td>
+                    <td>Geoname ID</td>
+                  </tr>
+                  <tr>
+                    <td>city</td>
+                    <td>string</td>
+                    <td>City name</td>
+                  </tr>
+                  <tr>
+                    <td>region</td>
+                    <td>string</td>
+                    <td>Region name</td>
+                  </tr>
+                  <tr>
+                    <td>lat</td>
+                    <td>decimal</td>
+                    <td>Latitude in decimal degree</td>
+                  </tr>
+                  <tr>
+                    <td>lon</td>
+                    <td>decimal</td>
+                    <td>Longitude in decimal degree</td>
+                  </tr>
+                  <tr>
+                    <td>tz_id</td>
+                    <td>string</td>
+                    <td>Time zone</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Astronomy API">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Astronomy API</h2>
+              <p class="p-scrollspy mt-3">
+                Astronomy API method allows a user to get up to date information
+                for sunrise, sunset, moonrise, moonset, moon phase and
+                illumination in json and xml.
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>sunrise</td>
+                    <td>string</td>
+                    <td>Sunrise local time</td>
+                  </tr>
+                  <tr>
+                    <td>sunset</td>
+                    <td>string</td>
+                    <td>Sunset local time</td>
+                  </tr>
+                  <tr>
+                    <td>moonrise</td>
+                    <td>string</td>
+                    <td>Moonrise local time</td>
+                  </tr>
+                  <tr>
+                    <td>moonset</td>
+                    <td>string</td>
+                    <td>Moonset local time</td>
+                  </tr>
+                  <tr>
+                    <td>moon_phase</td>
+                    <td>string</td>
+                    <td>Moon phases</td>
+                  </tr>
+                  <tr>
+                    <td>moon_illumination</td>
+                    <td>int</td>
+                    <td>Moon illumination</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Time Zone API">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Time Zone API</h2>
+              <p class="p-scrollspy mt-3">
+                Time Zone API method allows a user to get up to date time zone
+                and local time information in json and xml.
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>tz_id</td>
+                    <td>string</td>
+                    <td>Time zone id</td>
+                  </tr>
+                  <tr>
+                    <td>localtime_epoch</td>
+                    <td>int</td>
+                    <td>Local time in epoch.</td>
+                  </tr>
+                  <tr>
+                    <td>localtime</td>
+                    <td>string</td>
+                    <td>Local time in yyyy-MM-dd HH:mm format</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Sports API">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Sports API</h2>
+              <p class="p-scrollspy mt-3">
+                Sports API method allows a user to get listing of all upcoming
+                sports events for football, cricket and golf in json and xml.
+              </p>
+              <table class="table table-bordered table-request-url">
+                <thead>
+                  <tr>
+                    <th>Field</th>
+                    <th>Data Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>stadium</td>
+                    <td>string</td>
+                    <td>Name of stadium</td>
+                  </tr>
+                  <tr>
+                    <td>country</td>
+                    <td>int</td>
+                    <td>Country</td>
+                  </tr>
+                  <tr>
+                    <td>region</td>
+                    <td>string</td>
+                    <td>Region</td>
+                  </tr>
+                  <tr>
+                    <td>tournament</td>
+                    <td>string</td>
+                    <td>Tournament name</td>
+                  </tr>
+                  <tr>
+                    <td>start</td>
+                    <td>string</td>
+                    <td>
+                      Start local date and time for event in yyyy-MM-dd HH:mm
+                      format.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>match</td>
+                    <td>string</td>
+                    <td>Match name</td>
+                  </tr>
+                </tbody>
+              </table>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Example">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Example</h2>
+              <p class="p-scrollspy mt-3">
+                WeatherAPI.com API is so easy to implement. Look at following
+                examples on how you can form a request to get data either
+                through a web browser or in your application.
+              </p>
+              <ol class="mt-5">
+                <li>
+                  <p class="p-scrollspy">
+                    So to get current weather for London: JSON:
+                    http://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=London
+                  </p>
+                  <p class="p-scrollspy p-margin">
+                    XML:
+                    http://api.weatherapi.com/v1/current.xml?key=YOUR_API_KEY&q=London
+                  </p>
+                </li>
+                <li>
+                  <p class="p-scrollspy">
+                    To get 7 day weather for US Zipcode 07112: JSON:
+                    http://api.weatherapi.com/v1/forecast.json?key=&q=07112&days=7
+                  </p>
+                  <p class="p-scrollspy p-margin">
+                    XML: XML:
+                    http://api.weatherapi.com/v1/forecast.xml?key=YOUR_API_KEY&q=07112&days=7
+                  </p>
+                </li>
+                <li>
+                  <p class="p-scrollspy">
+                    Search for cities starting with Lond: JSON:
+                    http://api.weatherapi.com/v1/search.json?key=YOUR_API_KEY&q=lond
+                  </p>
+                  <p class="p-scrollspy">
+                    XML:
+                    http://api.weatherapi.com/v1/search.xml?key=YOUR_API_KEY&q=lond
+                  </p>
+                </li>
+              </ol>
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Integrations">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Integrations</h2>
+              <p class="p-scrollspy mt-3">
+                Please use our <a href="apiexplorer.html">API Explorer</a> to
+                see how the request is formed and what response to expect.
+              </p>
+              <p class="p-scrollspy">
+                We also have SDK for popular framework/languages
+                <a href="https://github.com/weatherapicom/"
+                  >available on Github for quick integrations.</a
+                >
+              </p>
+              <hr />
+            </div>
+          </section>
+
+          <section
+            class="scrollspy scrollspy-title"
+            spy-title="Resources"
+            id="resources"
+          >
+            <div class="col-xxl-11">
+              <h1 class="h1-scrollspy mt-5">Resources</h1>
+            </div>
+          </section>
+
+          <section
+            class="scrollspy"
+            spy-title="Weather Icons and Codes"
+            id="weather-icon-codes"
+          >
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-5">Weather Icons and Codes</h2>
+              <p class="p-scrollspy mt-3">
+                In the JSON response we return a condition:code which is a code
+                for describing weather. For example clear, sunny, etc.
+              </p>
+              <p class="p-scrollspy p-margin">
+                You may retrieve the whole condition list as JSON to implement
+                different weather icons or apply other logic to your
+                application. It also includes multi-language translations of
+                weather condition text.
+              </p>
+              <p class="p-scrollspy p-margin">
+                Multilingual Condition list URL:
+                <a href="https://www.weatherapi.com/docs/conditions.json"
+                  >https://www.weatherapi.com/docs/conditions.json</a
+                >
+              </p>
+              <p class="p-scrollspy p-margin">
+                English Condition list URL (CSV):
+                <a href="https://www.weatherapi.com/docs/weather_conditions.csv"
+                  >https://www.weatherapi.com/docs/weather_conditions.csv</a
+                >
+              </p>
+              <p class="p-scrollspy p-margin">
+                English Condition list URL (JSON):
+                <a
+                  href="https://www.weatherapi.com/docs/weather_conditions.json"
+                  >https://www.weatherapi.com/docs/weather_conditions.json</a
+                >
+              </p>
+              <p class="p-scrollspy p-margin">
+                English Condition list URL (XML):
+                <a href="https://www.weatherapi.com/docs/weather_conditions.xml"
+                  >https://www.weatherapi.com/docs/weather_conditions.xml</a
+                >
+              </p>
+              <p class="p-scrollspy p-margin">
+                Please download the list and use it offline instead of directly
+                linking into your application.
+              </p>
+              <h3 class="h3-scrollspy">Weather Icons</h3>
+              <p class="p-scrollspy">
+                You are also free to download WeatherAPI.com weather icons and
+                use it in your application or website.
+              </p>
+              <a href="//cdn.weatherapi.com/weather.zip"
+                ><button class="btn-download-zip text-white">
+                  Download Weather Icons (.zip)
+                </button></a
+              >
+              <hr />
+            </div>
+          </section>
+
+          <section class="scrollspy" spy-title="Credit">
+            <div class="col-xxl-11">
+              <h2 class="h2-scrollspy mt-4">Link Back</h2>
+              <p class="p-scrollspy mt-3">
+                If you are on our free plan we would appreciate if you could
+                provide a link back to our service.
+              </p>
+              <h5 class="h5-scrollspy">HTML LINK BACK CODE EXAMPLES</h5>
+              <p class="p-scrollspy mt-3">
+                You may choose any of the below HTML code and place it on the
+                website you have provided during the Free plan upgrade.
+              </p>
+              <h5 class="h5-scrollspy">Text</h5>
+              <p class="p-powered position-absolute">
+                Powered by a href="https://www.weatherapi.com/" title="Free
+                Weather API" >WeatherAPI.com /a >
+              </p>
+              <strong class="p-italic position-absolute strong-one"
+                ><em>Preview</em></strong
+              >
+              <p class="p-powered-two p-scrollspy position-absolute">
+                Powered by <a href="home.html">WeatherAPI.com</a>
+              </p>
+              <h5 class="h5-scrollspy h5-position-absolute">Image</h5>
+              <p class="p-powered position-absolute">
+                a href="https://www.weatherapi.com/"title="Free Weather API">img
+                src="//cdn.weatherapi.com/v4/images/weatherapi _logo.png"
+              </p>
+              <p class="p-powered position-absolute mt-4">
+                alt="Weather data by WeatherAPI.com" border="0" />/a>
+              </p>
+              <strong class="p-italic position-absolute strong-two"
+                ><em>Preview</em></strong
+              >
+              <img src="img/logo.png" class="img-logo position-absolute" />
+              <hr class="hr-position-absolute" />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-easy-signup mt-5 position-relative">
+      <div class="side-left-skew"></div>
+      <div class="side-right-skew"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h3 class="text-center text-white pt-5 h3-quick-easy">
+              Quick and Easy Signup for Free Weather API
+            </h3>
+            <p class="text-center text-white p-quick-easy">
+              WeatherAPI.com makes it super easy to integrate our realtime and
+              weather forecast data, historical weather, air quality data,
+              autocomplete, time zone, astronomy and sports data into your new
+              or existing project.
+            </p>
+            <a href="signup.html" class="text-decoration-none">
+              <button
+                type="button"
+                class="button-get-started-three mx-auto d-block"
+              >
+                <span>Get Started</span>
+                <i
+                  class="fa-solid fa-circle-right img-get-started-three"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer mt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <h6 class="h6-footer">Developers</h6>
+            <nav class="nav flex-column nav-footer">
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">APIs</a>
+              <a class="nav-link" href="#">Docs</a>
+              <a class="nav-link" href="#">Github</a>
+              <a class="nav-link" href="#">Weather</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Climately.com</a>
+              <a class="nav-link" href="#">TheGlobalWeather.com</a>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <nav class="nav flex-column nav-footer-two">
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Privacy</a>
+              <a class="nav-link" href="#">Terms of Services</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-12">
+            <span class="span-footer"
+              >Popular Holiday Destinations: <a href="#"> Gran Canaria</a> |
+              <a href="#">Tenerife</a> | <a href="#">Majorca</a> |
+              <a href="#">Lanzarote</a> | <a href="#">Fuerteventura</a> |
+              <a href="#">Crete</a> | <a href="#">New York</a> |
+              <a href="#">Rome</a> | <a href="#">Dubai</a> |
+              <a href="#">London</a> | <a href="#">Sydney</a> |
+              <a href="#">Moscow</a></span
+            >
+            <hr />
+          </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-lg-12">
+            <p class="p-footer text-center">
+              Copyright © <a href="home.html">Weather API</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="icon-footer d-flex justify-content-center mb-5">
+              <div class="circle-social-media">
+                <a href="https://github.com/weatherapicom/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://twitter.com/weatherapidev/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://www.facebook.com/weatherapidev"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="contact-us">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-us-div d-flex justify-content-end">
+              <div class="contact-us-box position-absolute pb-2 display-none">
+                <div class="col-lg-12">
+                  <div class="title-contact-us-box">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p class="text-white p-contact-us">Contact us!</p>
+                        <p class="text-white p-enter-message mt-3">
+                          Please enter your message for our team and <br />
+                          we will get back to you ASAP.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <span class="span-indicates d-flex justify-content-end mt-4"
+                      >* indicates a required field</span
+                    >
+                    <label for="name" class="span-indicates">Name *</label
+                    ><br />
+                    <input
+                      type="text"
+                      name="name"
+                      class="w-100"
+                      placeholder="Enter your name..."
+                    /><br />
+                    <label for="email" class="span-indicates mt-2"
+                      >Email *</label
+                    ><br />
+                    <input
+                      type="email"
+                      name="email"
+                      class="w-100"
+                      placeholder="Enter your email..."
+                    />
+                    <label for="message" class="span-indicates mt-2"
+                      >Message *</label
+                    ><br />
+                    <textarea name="message" class="w-100"></textarea>
+                    <button
+                      type="submit"
+                      class="w-100 text-center text-white mt-2"
+                    >
+                      SEND
+                    </button>
+                    <div class="powered-div mt-2 d-flex justify-content-end">
+                      <span class="span-powered">powered by </span>
+                      <img src="img/olark-logo-img.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button-message">
+                <img src="img/message.png" class="img-message" />
+                <span class="span-contact-us">Contact Us</span>
+                <svg
+                  class="svg-close position-absolute display-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="#FFFFFF"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="home.js"></script>
+    <script src="docs.js"></script>
+  </body>
+</html>

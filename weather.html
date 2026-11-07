@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn.weatherapi.com/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/58a7f82d2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="weather.css" />
+    <title>
+      Semarang Weather - 7, 10 & 14 Day Weather Forecast - Central Java,
+      Indonesia
+    </title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light navbar-header">
+      <div class="container-fluid">
+        <img src="img/logo.png" class="img-logo ms-1" />
+
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="navbar-collapse-before">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apiexplorer.html">API Explorer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="navbar-second">
+        <div class="row justify-content-center">
+          <div class="col-xl-11">
+            <div class="navbar-to-right d-flex justify-content-end">
+              <div class="div-navbar-second active-div-f-c div-fahrenheit">
+                <p class="p-navbar-second">°F</p>
+              </div>
+              <div class="div-navbar-second ms-1 div-celsius">
+                <p class="p-navbar-second">°C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather-header mt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-11">
+            <input
+              type="text"
+              class="input-header w-100"
+              placeholder="Start entering city name, US zip code, Canada postal code, UK postcode, ip, metar, etc."
+            />
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-center">
+          <div class="col-xl-11">
+            <span
+              ><img src="img/indonesia-flag.jpeg" class="img-flag" />
+              <h1 class="h1-weather-header">
+                Semarang Weather Forecast
+                <span class="span-weather-header">Central Java, Indonesia</span>
+              </h1>
+            </span>
+          </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-xl-11">
+            <div class="div-weather-header">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="div-partly-cloudly">
+                    <img src="img/cloudly.webp" title="Cloudly" />
+                    <span class="span-partly-cloudly text-white"
+                      >Partly cloudy</span
+                    >
+                  </div>
+                  <div class="div-wind-precip text-end">
+                    <p class="text-white">Wind: 6.9 mph</p>
+                    <p class="text-white">Precip: 0.0 in</p>
+                    <p class="text-white">Pressure: 29.7 in</p>
+                    <h3 class="text-white p-day me-3">84.2 °f</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-12">
+                  <div class="weather-day d-flex justify-content-center">
+                    <div class="day-by-day text-white">
+                      <p>Sun</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.8 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Mon</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.2 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Tue</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Wed</p>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        class="img-day"
+                        title="Patchy rain possible"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Thu</p>
+                      <img
+                        src="img/moderate-rain.webp"
+                        class="img-day"
+                        title="Moderate rain"
+                      />
+                      <p class="p-day">81.7 °f</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="weather-body mt-3">
+        <div class="row justify-content-center">
+          <div class="col-xl-11">
+            <div class="navbar-previous-next-one d-flex justify-content-center">
+              <div class="div-navbar-previous-next-one div-previous-one">
+                <p class="p-navbar-previous-next-one active-div-previous-next">
+                  Previous Day
+                </p>
+              </div>
+              <div class="div-navbar-previous-next-one div-next-one">
+                <p class="p-navbar-previous-next-one">Next Day</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 justify-content-center">
+          <div class="col-xl-11">
+            <h3 class="h3-today">Today's Weather in Semarang</h3>
+            <div class="div-table-fahrenheit-celsius">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover table-head">
+                  <tr>
+                    <td>
+                      Sunrise: 05:26 AM <br />
+                      Sunset: 05:46 PM
+                    </td>
+                    <td>Moonrise: 01:39 PM <br />Moonset: 01:26 AM</td>
+                    <td style="background-color: #e4ad2b">
+                      Max: <br />
+                      90.8 °f
+                    </td>
+                    <td style="background-color: #e9d97e">
+                      Min: <br />
+                      81.1 °f
+                    </td>
+                    <td style="background-color: #f1c151">
+                      Avg: <br />
+                      84.3 °f
+                    </td>
+                    <td style="background-color: #0899ca">
+                      Precip: <br />
+                      0.55 in
+                    </td>
+                    <td style="background-color: #80f9cc">
+                      Max Wind: <br />
+                      13.3 mph
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover table-head">
+                  <tr>
+                    <td style="width: 130px"></td>
+                    <td>
+                      Thu 03 <br />
+                      0:00 am
+                    </td>
+                    <td>Thu 03 <br />3:00 am</td>
+                    <td>
+                      Thu 03 <br />
+                      6:00 am
+                    </td>
+                    <td>
+                      Thu 03 <br />
+                      9:00 am
+                    </td>
+                    <td>
+                      Thu 03 <br />
+                      12:00 pm
+                    </td>
+                    <td>
+                      Thu 03 <br />
+                      3:00 pm
+                    </td>
+                    <td>
+                      Thu 03 <br />
+                      6:00 pm
+                    </td>
+                    <td>
+                      Thu 03 <br />
+                      8:00 pm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p>Icon</p></td>
+                    <td>
+                      <img
+                        src="img/light-rain-shower.webp"
+                        title="Light rain shower"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="img/light-rain-shower.webp"
+                        title="Light rain shower"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        title="Patchy rain possible"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="img/partly-cloudly.webp"
+                        title="Partly cloudly"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="img/partly-cloudly.webp"
+                        title="Partly cloudly"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="img/light-rain-shower.webp"
+                        title="Light rain shower"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        title="Patchy rain possible"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        title="Patchy rain possible"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p>Temp</p></td>
+                    <td style="background-color: #e9d97e">
+                      <p>81.9°f</p>
+                    </td>
+                    <td style="background-color: #e9d97e">
+                      <p>81.3°f</p>
+                    </td>
+                    <td style="background-color: #e9d97e">
+                      <p>81.1°f</p>
+                    </td>
+                    <td style="background-color: #e9d97e">
+                      <p>81.9°f</p>
+                    </td>
+                    <td style="background-color: #e4ad2b">
+                      <p>90.3°f</p>
+                    </td>
+                    <td style="background-color: #f1c151">
+                      <p>88.3°f</p>
+                    </td>
+                    <td style="background-color: #f1c151">
+                      <p>85.5°f</p>
+                    </td>
+                    <td style="background-color: #f1c151">
+                      <p>83.5°f</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p>Wind</p></td>
+                    <td style="background-color: #9bf6f3">
+                      <p>2.2 mph</p>
+                    </td>
+                    <td style="background-color: #9bf6f3">
+                      <p>2.7 mph</p>
+                    </td>
+                    <td style="background-color: #9bf6f3">
+                      <p>3.6 mph</p>
+                    </td>
+                    <td style="background-color: #9bf6f3">
+                      <p>3.8 mph</p>
+                    </td>
+                    <td style="background-color: #a4f6f9">
+                      <p>6.5 mph</p>
+                    </td>
+                    <td style="background-color: #80f9cc">
+                      <p>8.1 mph</p>
+                    </td>
+                    <td style="background-color: #9bf6f3">
+                      <p>3.8 mph</p>
+                    </td>
+                    <td style="background-color: #9bf6f3">
+                      <p>2.0 mph</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p>Precip</p></td>
+                    <td style="background-color: #ddf0f7">
+                      <p>0.02 in</p>
+                    </td>
+                    <td style="background-color: #ffffff">
+                      <p>0.00 in</p>
+                    </td>
+                    <td style="background-color: #ddf0f7">
+                      <p>0.01 in</p>
+                    </td>
+                    <td style="background-color: #ffffff">
+                      <p>0.00 in</p>
+                    </td>
+                    <td style="background-color: #ffffff">
+                      <p>0.00 in</p>
+                    </td>
+                    <td style="background-color: #ddf0f7">
+                      <p>0.02 in</p>
+                    </td>
+                    <td style="background-color: #ddf0f7">
+                      <p>0.02 in</p>
+                    </td>
+                    <td style="background-color: #8adaf5">
+                      <p>0.07 in</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p>Cloud</p></td>
+                    <td style="background-color: #d1d3d4">
+                      <p>67%</p>
+                    </td>
+                    <td style="background-color: #d1d3d4">
+                      <p>59%</p>
+                    </td>
+                    <td style="background-color: #bcbfc0">
+                      <p>82%</p>
+                    </td>
+                    <td style="background-color: #e1e3e4">
+                      <p>41%</p>
+                    </td>
+                    <td style="background-color: #e1e3e4">
+                      <p>37%</p>
+                    </td>
+                    <td style="background-color: #d1d3d4">
+                      <p>59%</p>
+                    </td>
+                    <td style="background-color: #d1d3d4">
+                      <p>52%</p>
+                    </td>
+                    <td style="background-color: #bcbfc0">
+                      <p>74%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p>Humidity</p></td>
+                    <td>
+                      <p>75%</p>
+                    </td>
+                    <td>
+                      <p>77%</p>
+                    </td>
+                    <td>
+                      <p>78%</p>
+                    </td>
+                    <td>
+                      <p>75%</p>
+                    </td>
+                    <td>
+                      <p>59%</p>
+                    </td>
+                    <td>
+                      <p>62%</p>
+                    </td>
+                    <td>
+                      <p>68%</p>
+                    </td>
+                    <td>
+                      <p>74%</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><p>Pressure</p></td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.8 in</p>
+                    </td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.8 in</p>
+                    </td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.8 in</p>
+                    </td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.9 in</p>
+                    </td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.8 in</p>
+                    </td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.7 in</p>
+                    </td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.8 in</p>
+                    </td>
+                    <td style="background-color: #7fecf9">
+                      <p>29.8 in</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div
+              class="navbar-previous-next-one d-flex justify-content-center mt-3"
+            >
+              <div class="div-navbar-previous-next-two div-previous-two">
+                <p class="p-navbar-previous-next-two active-div-previous-next">
+                  Previous Day
+                </p>
+              </div>
+              <div class="div-navbar-previous-next-two div-next-two">
+                <p class="p-navbar-previous-next-two">Next Day</p>
+              </div>
+            </div>
+            <div class="div-weather-detail">
+              <h2 class="bold-weather-next-day mt-3">
+                Weather in Semarang for next 7, 10, 14 day and beyond
+              </h2>
+              <p class="p-weather-next-day">
+                Forecasted weather in Semarang, Central Java, Indonesia for the
+                next 7, 10, 14 days and beyond is predicting
+                <b>maximum temperature</b>
+                around 34℃ (or 93℉) on Friday 4<sup>th</sup> November at around
+                11 am. Over the same period the <b>minimum temperature</b> will
+                be 24℃ or 75℉ on Wednesday 9th November at around 10 pm.
+              </p>
+              <p class="p-weather-next-day">
+                Weather forecaster is reporting for Semarang a Wednesday 9<sup
+                  >th</sup
+                >
+                November to be the wettest day in the coming week with around
+                12.10mm or 0.5 inches of rainfall. Try and stay dry and do make
+                sure to carry an umbrella if you are out and about in Semarang.
+              </p>
+              <p class="p-weather-next-day">
+                The weather forecast is also predicting windiest of all days
+                will be Sunday 6<sup>th </sup> November as wind will reach 10mph
+                or 16kmph at around 2 pm.
+              </p>
+              <h3 class="bold-weather-next-day">
+                Best months to visit Semarang?
+              </h3>
+              <p class="p-weather-next-day">
+                March and April are the best month to go for holiday or travel
+                to Semarang. In these month temperature is at around 88°f and
+                average of 204.5714 hours of sunshine in a month.
+              </p>
+              <h3 class="bold-weather-next-day">Coldest months of Semarang?</h3>
+              <p class="p-weather-next-day">
+                July and August are the coldest months with temperature at
+                around 76°f.
+              </p>
+              <h3 class="bold-weather-next-day">
+                Which months receive most rainfall in Semarang?
+              </h3>
+              <p class="p-weather-next-day">
+                February and March receive most rainfall with precipitation
+                count of 12.89 inch.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in January in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 87°f and at night it goes to
+                78°f. In the month of January on average Semarang gets 11.36
+                inch of rain and approximately 14 wet days in the month. For the
+                most part the humidity is around 73%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in February in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 87°f and at night it goes to
+                78°f. In the month of February on average Semarang gets 12.89
+                inch of rain and approximately 14 wet days in the month. For the
+                most part the humidity is around 75%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in March in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 88°f and at night it goes to
+                78°f. In the month of March on average Semarang gets 12.00 inch
+                of rain and approximately 17 wet days in the month. For the most
+                part the humidity is around 74%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in April in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 89°f and at night it goes to
+                78°f. In the month of April on average Semarang gets 11.86 inch
+                of rain and approximately 15 wet days in the month. For the most
+                part the humidity is around 74%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in May in Semarang, Central Java, Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 90°f and at night it goes to
+                79°f. In the month of May on average Semarang gets 8.08 inch of
+                rain and approximately 11 wet days in the month. For the most
+                part the humidity is around 73%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in June in Semarang, Central Java, Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 89°f and at night it goes to
+                78°f. In the month of June on average Semarang gets 6.59 inch of
+                rain and approximately 7 wet days in the month. For the most
+                part the humidity is around 73%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in July in Semarang, Central Java, Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 89°f and at night it goes to
+                76°f. In the month of July on average Semarang gets 4.79 inch of
+                rain and approximately 6 wet days in the month. For the most
+                part the humidity is around 72%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in August in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 89°f and at night it goes to
+                77°f. In the month of August on average Semarang gets 3.83 inch
+                of rain and approximately 5 wet days in the month. For the most
+                part the humidity is around 71%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in September in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 90°f and at night it goes to
+                78°f. In the month of September on average Semarang gets 4.93
+                inch of rain and approximately 6 wet days in the month. For the
+                most part the humidity is around 68%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in October in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 90°f and at night it goes to
+                79°f. In the month of October on average Semarang gets 7.65 inch
+                of rain and approximately 10 wet days in the month. For the most
+                part the humidity is around 68%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in November in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 90°f and at night it goes to
+                79°f. In the month of November on average Semarang gets 10.41
+                inch of rain and approximately 15 wet days in the month. For the
+                most part the humidity is around 70%.
+              </p>
+              <h4 class="bold-weather-next-day">
+                How is the weather in December in Semarang, Central Java,
+                Indonesia?
+              </h4>
+              <p class="p-weather-next-day">
+                Daytime temperature stays around 88°f and at night it goes to
+                78°f. In the month of December on average Semarang gets 9.87
+                inch of rain and approximately 13 wet days in the month. For the
+                most part the humidity is around 72%.
+              </p>
+              <h4 class="bold-weather-next-day">Buy Historical Weather Data</h4>
+              <div class="row me-5">
+                <div class="col-xl-5">
+                  <p class="p-weather-next-day p-to-left">
+                    Apart from averages, the data is also available in hourly
+                    interval.
+                  </p>
+                </div>
+                <div class="col-xl-4">
+                  <ul class="ul-weather-next-day">
+                    <li>Temperature(°C/°F)</li>
+                    <li>Visibility (km or miles)</li>
+                    <li>Pressure (mb or inches)</li>
+                    <li>TCloud (%)</li>
+                    <li>Humidity (%)</li>
+                    <li>Wind Speed (km/h, mph, knots or m/s)</li>
+                    <li>Wind Gust (km/h, mph, knots or m/s)</li>
+                    <li>Snow amount (cm)</li>
+                    <li>Rain amount (mm or inches)</li>
+                    <li>UV Index</li>
+                    <li>Wind direction (degree)</li>
+                    <li>Dew point (°C/°F)</li>
+                    <li>Sky condition description text</li>
+                  </ul>
+                </div>
+                <div class="col-xl-3">
+                  <a href="#">Buy Historical Weather Data</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-12 mt-3">
+      <div class="weather-google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5605140.744209203!2d107.35430513086597!3d-7.542879330142758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4d3f0d024d%3A0x1e0432b9da5cb9f2!2sSemarang%2C%20Semarang%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1667637257712!5m2!1sen!2sid"
+          width="100%"
+          height="400"
+          style="border: 0"
+          frameborder="0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        >
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="weather-body">
+        <div class="row justify-content-center">
+          <div class="col-xl-11">
+            <h3 class="bold-weather-next-day">
+              Semarang Free Weather Widget for Website
+            </h3>
+            <p class="p-weather-next-day">
+              <b
+                >WeatherAPI.com free weather widgets could be easily added to
+                any website or content management systems (CMS) like Wordpress,
+                Drupal or Joomla. If your website caters for areas in and around
+                weather in Semarang, Central Java, Indonesia then our modern and
+                responsive weather widgets will enhance your user experience by
+                providing weather information.</b
+              >
+            </p>
+            <p class="p-weather-next-day">
+              Simply select your preferred weather widget option below and then
+              copy the HTML code for that widget from the box below it. Paste
+              the HTML code on your website and enjoy the weather!
+            </p>
+            <p class="p-weather-next-day">
+              Our weather widgets work on both HTTP and HTTPS websites with no
+              changes required. Weather loads asynchronous i.e. no impact on
+              your website loading time for better search engine ranking. Our
+              widgets are responsive i.e. it will auto adjust the width
+              according to where you place it on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="weather-foot">
+        <div class="row justify-content-center">
+          <div class="col-xl-5">
+            <h4>Weather Widget #1</h4>
+            <div
+              class="div-weather-foot"
+              style="
+                background-image: linear-gradient(to right, #c31432, #240b36);
+              "
+            >
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <span class="span-partly-cloudly text-white">Semarang</span>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="div-partly-cloudly">
+                    <img src="img/cloudly.webp" title="Cloudly" />
+                    <span class="span-partly-cloudly text-white"
+                      >Partly cloudy</span
+                    >
+                  </div>
+                  <div class="div-wind-precip text-end">
+                    <p class="text-white">Wind: 6.9 mph</p>
+                    <p class="text-white">Precip: 0.0 in</p>
+                    <p class="text-white">Pressure: 29.7 in</p>
+                    <h3 class="text-white p-day me-3">84.2 °f</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-12">
+                  <div class="weather-day d-flex justify-content-center">
+                    <div class="day-by-day text-white">
+                      <p>Sun</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.8 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Mon</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.2 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Tue</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Wed</p>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        class="img-day"
+                        title="Patchy rain possible"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Thu</p>
+                      <img
+                        src="img/moderate-rain.webp"
+                        class="img-day"
+                        title="Moderate rain"
+                      />
+                      <p class="p-day">81.7 °f</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="mt-3">HTML Code</h6>
+            <textarea class="w-100">
+<div id="weatherapi-weather-widget-1"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=2966176&wid=1&tu=2 div=weatherapi-weather-widget-1'async></script><noscript><a href="https://www.weatherapi.com/weather/q/semarang-2966176" alt="Hour by hour Semarang weather">10 day hour by hour Semarang weather</a></noscript>
+            </textarea>
+          </div>
+          <div class="col-xl-5">
+            <h4>Weather Widget #2</h4>
+            <div
+              class="div-weather-foot"
+              style="
+                background-image: linear-gradient(to right, #fc466b, #3f5efb);
+              "
+            >
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <span class="span-partly-cloudly text-white">Semarang</span>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="div-partly-cloudly">
+                    <img src="img/cloudly.webp" title="Cloudly" />
+                    <span class="span-partly-cloudly text-white"
+                      >Partly cloudy</span
+                    >
+                  </div>
+                  <div class="div-wind-precip text-end">
+                    <p class="text-white">Wind: 6.9 mph</p>
+                    <p class="text-white">Precip: 0.0 in</p>
+                    <p class="text-white">Pressure: 29.7 in</p>
+                    <h3 class="text-white p-day me-3">84.2 °f</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-12">
+                  <div class="weather-day d-flex justify-content-center">
+                    <div class="day-by-day text-white">
+                      <p>Sun</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.8 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Mon</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.2 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Tue</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Wed</p>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        class="img-day"
+                        title="Patchy rain possible"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Thu</p>
+                      <img
+                        src="img/moderate-rain.webp"
+                        class="img-day"
+                        title="Moderate rain"
+                      />
+                      <p class="p-day">81.7 °f</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="mt-3">HTML Code</h6>
+            <textarea class="w-100">
+<div id="weatherapi-weather-widget-2"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=2966176&wid=2&tu=2&div=weatherapi-weather-widget-2' async></script><noscript><a href="https://www.weatherapi.com/weather/q/semarang-2966176" alt="Hour by hour Semarang weather">10 day hour by hour Semarang weather</a></noscript>
+            </textarea>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-5">
+            <h4>Weather Widget #3</h4>
+            <div
+              class="div-weather-foot"
+              style="
+                background-image: linear-gradient(
+                  to right,
+                  #0f0c29,
+                  #302b63,
+                  #24243e
+                );
+              "
+            >
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <span class="span-partly-cloudly text-white">Semarang</span>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="div-partly-cloudly">
+                    <img src="img/cloudly.webp" title="Cloudly" />
+                    <span class="span-partly-cloudly text-white"
+                      >Partly cloudy</span
+                    >
+                  </div>
+                  <div class="div-wind-precip text-end">
+                    <p class="text-white">Wind: 6.9 mph</p>
+                    <p class="text-white">Precip: 0.0 in</p>
+                    <p class="text-white">Pressure: 29.7 in</p>
+                    <h3 class="text-white p-day me-3">84.2 °f</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-12">
+                  <div class="weather-day d-flex justify-content-center">
+                    <div class="day-by-day text-white">
+                      <p>Sun</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.8 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Mon</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.2 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Tue</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Wed</p>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        class="img-day"
+                        title="Patchy rain possible"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Thu</p>
+                      <img
+                        src="img/moderate-rain.webp"
+                        class="img-day"
+                        title="Moderate rain"
+                      />
+                      <p class="p-day">81.7 °f</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="mt-3">HTML Code</h6>
+            <textarea class="w-100">
+<div id="weatherapi-weather-widget-3"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=2966176&wid=3&tu=2&div=weatherapi-weather-widget-3' async></script><noscript><a href="https://www.weatherapi.com/weather/q/semarang-2966176" alt="Hour by hour Semarang weather">10 day hour by hour Semarang weather</a></noscript>
+            </textarea>
+          </div>
+          <div class="col-xl-5">
+            <h4>Weather Widget #4</h4>
+            <div
+              class="div-weather-foot"
+              style="
+                background-image: linear-gradient(to right, #00f260, #0575e6);
+              "
+            >
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <span class="span-partly-cloudly text-white">Semarang</span>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="div-partly-cloudly">
+                    <img src="img/cloudly.webp" title="Cloudly" />
+                    <span class="span-partly-cloudly text-white"
+                      >Partly cloudy</span
+                    >
+                  </div>
+                  <div class="div-wind-precip text-end">
+                    <p class="text-white">Wind: 6.9 mph</p>
+                    <p class="text-white">Precip: 0.0 in</p>
+                    <p class="text-white">Pressure: 29.7 in</p>
+                    <h3 class="text-white p-day me-3">84.2 °f</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-12">
+                  <div class="weather-day d-flex justify-content-center">
+                    <div class="day-by-day text-white">
+                      <p>Sun</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.8 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Mon</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.2 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Tue</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Wed</p>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        class="img-day"
+                        title="Patchy rain possible"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Thu</p>
+                      <img
+                        src="img/moderate-rain.webp"
+                        class="img-day"
+                        title="Moderate rain"
+                      />
+                      <p class="p-day">81.7 °f</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="mt-3">HTML Code</h6>
+            <textarea class="w-100">
+<div id="weatherapi-weather-widget-4"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=2966176&wid=4&tu=2&div=weatherapi-weather-widget-4' async></script><noscript><a href="https://www.weatherapi.com/weather/q/semarang-2966176" alt="Hour by hour Semarang weather">10 day hour by hour Semarang weather</a></noscript>
+            </textarea>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-5">
+            <h4>Weather Widget #5</h4>
+            <div
+              class="div-weather-foot"
+              style="
+                background-image: linear-gradient(to right, #000046, #1cb5e0);
+              "
+            >
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <span class="span-partly-cloudly text-white">Semarang</span>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="div-partly-cloudly">
+                    <img src="img/cloudly.webp" title="Cloudly" />
+                    <span class="span-partly-cloudly text-white"
+                      >Partly cloudy</span
+                    >
+                  </div>
+                  <div class="div-wind-precip text-end">
+                    <p class="text-white">Wind: 6.9 mph</p>
+                    <p class="text-white">Precip: 0.0 in</p>
+                    <p class="text-white">Pressure: 29.7 in</p>
+                    <h3 class="text-white p-day me-3">84.2 °f</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-12">
+                  <div class="weather-day d-flex justify-content-center">
+                    <div class="day-by-day text-white">
+                      <p>Sun</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.8 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Mon</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.2 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Tue</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Wed</p>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        class="img-day"
+                        title="Patchy rain possible"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Thu</p>
+                      <img
+                        src="img/moderate-rain.webp"
+                        class="img-day"
+                        title="Moderate rain"
+                      />
+                      <p class="p-day">81.7 °f</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="mt-3">HTML Code</h6>
+            <textarea class="w-100">
+<div id="weatherapi-weather-widget-5"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=2966176&wid=5&tu=2&div=weatherapi-weather-widget-5' async></script><noscript><a href="https://www.weatherapi.com/weather/q/semarang-2966176" alt="Hour by hour Semarang weather">10 day hour by hour Semarang weather</a></noscript>
+            </textarea>
+          </div>
+          <div class="col-xl-5">
+            <h4>Weather Widget #6</h4>
+            <div
+              class="div-weather-foot"
+              style="
+                background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+              "
+            >
+              <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <span class="span-partly-cloudly text-white">Semarang</span>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="div-partly-cloudly">
+                    <img src="img/cloudly.webp" title="Cloudly" />
+                    <span class="span-partly-cloudly text-white"
+                      >Partly cloudy</span
+                    >
+                  </div>
+                  <div class="div-wind-precip text-end">
+                    <p class="text-white">Wind: 6.9 mph</p>
+                    <p class="text-white">Precip: 0.0 in</p>
+                    <p class="text-white">Pressure: 29.7 in</p>
+                    <h3 class="text-white p-day me-3">84.2 °f</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-lg-12">
+                  <div class="weather-day d-flex justify-content-center">
+                    <div class="day-by-day text-white">
+                      <p>Sun</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.8 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Mon</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.2 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Tue</p>
+                      <img
+                        src="img/heavy-rain.webp"
+                        class="img-day"
+                        title="Heavy rain"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Wed</p>
+                      <img
+                        src="img/patchy-rain-possible.webp"
+                        class="img-day"
+                        title="Patchy rain possible"
+                      />
+                      <p class="p-day">84.3 °f</p>
+                    </div>
+                    <div class="day-by-day text-white">
+                      <p>Thu</p>
+                      <img
+                        src="img/moderate-rain.webp"
+                        class="img-day"
+                        title="Moderate rain"
+                      />
+                      <p class="p-day">81.7 °f</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6 class="mt-3">HTML Code</h6>
+            <textarea class="w-100">
+<div id="weatherapi-weather-widget-6"></div><script type='text/javascript' src='https://www.weatherapi.com/weather/widget.ashx?loc=2966176&wid=6&tu=2&div=weatherapi-weather-widget-6' async></script><noscript><a href="https://www.weatherapi.com/weather/q/semarang-2966176" alt="Hour by hour Semarang weather">10 day hour by hour Semarang weather</a></noscript>
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="weather-nav">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <h4 class="mt-3">NEARBY WEATHER</h4>
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#">Semarang</a>
+              <a class="nav-link" href="#">Jaten</a>
+              <a class="nav-link" href="#">Buaran</a>
+              <a class="nav-link" href="#">Mranggen</a>
+              <a class="nav-link" href="#">Ungaran</a>
+              <a class="nav-link" href="#">Grogol</a>
+              <a class="nav-link" href="#">Ngemplak</a>
+              <a class="nav-link" href="#">Ceper</a>
+            </nav>
+            <h4 class="mt-3">Recently Visited</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-easy-signup mt-5 position-relative">
+      <div class="side-left-skew"></div>
+      <div class="side-right-skew"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h3 class="text-center text-white pt-5 h3-quick-easy">
+              Quick and Easy Signup for Free Weather API
+            </h3>
+            <p class="text-center text-white p-quick-easy">
+              WeatherAPI.com makes it super easy to integrate our realtime and
+              weather forecast data, historical weather, air quality data,
+              autocomplete, time zone, astronomy and sports data into your new
+              or existing project.
+            </p>
+            <a href="signup.html" class="text-decoration-none">
+              <button
+                type="button"
+                class="button-get-started-three mx-auto d-block"
+              >
+                <span>Get Started</span>
+                <i
+                  class="fa-solid fa-circle-right img-get-started-three"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer mt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <h6 class="h6-footer">Developers</h6>
+            <nav class="nav flex-column nav-footer">
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">APIs</a>
+              <a class="nav-link" href="#">Docs</a>
+              <a class="nav-link" href="#">Github</a>
+              <a class="nav-link" href="#">Weather</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">Climately.com</a>
+              <a class="nav-link" href="#">TheGlobalWeather.com</a>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <nav class="nav flex-column nav-footer-two">
+              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#">Privacy</a>
+              <a class="nav-link" href="#">Terms of Services</a>
+            </nav>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-12">
+            <span class="span-footer"
+              >Popular Holiday Destinations: <a href="#"> Gran Canaria</a> |
+              <a href="#">Tenerife</a> | <a href="#">Majorca</a> |
+              <a href="#">Lanzarote</a> | <a href="#">Fuerteventura</a> |
+              <a href="#">Crete</a> | <a href="#">New York</a> |
+              <a href="#">Rome</a> | <a href="#">Dubai</a> |
+              <a href="#">London</a> | <a href="#">Sydney</a> |
+              <a href="#">Moscow</a></span
+            >
+            <hr class="hr-footer" />
+          </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-lg-12">
+            <p class="p-footer text-center">
+              Copyright © <a href="#">Weather API</a>
+            </p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-lg-12">
+            <div class="icon-footer d-flex justify-content-center mb-5">
+              <div class="circle-social-media">
+                <a href="https://github.com/weatherapicom/"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://twitter.com/weatherapidev/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div class="circle-social-media ms-4">
+                <a href="https://www.facebook.com/weatherapidev"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="contact-us">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-us-div d-flex justify-content-end">
+              <div class="contact-us-box position-absolute pb-2 display-none">
+                <div class="col-lg-12">
+                  <div class="title-contact-us-box">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p class="text-white p-contact-us">Contact us!</p>
+                        <p class="text-white p-enter-message mt-3">
+                          Please enter your message for our team and <br />
+                          we will get back to you ASAP.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <span class="span-indicates d-flex justify-content-end mt-4"
+                      >* indicates a required field</span
+                    >
+                    <label for="name" class="span-indicates">Name *</label
+                    ><br />
+                    <input
+                      type="text"
+                      name="name"
+                      class="w-100 input-contact-us"
+                      placeholder="Enter your name..."
+                    /><br />
+                    <label for="email" class="span-indicates mt-2"
+                      >Email *</label
+                    ><br />
+                    <input
+                      type="email"
+                      name="email"
+                      class="w-100 input-contact-us"
+                      placeholder="Enter your email..."
+                    />
+                    <label for="message" class="span-indicates mt-2"
+                      >Message *</label
+                    ><br />
+                    <textarea
+                      name="message"
+                      class="w-100 input-contact-us"
+                    ></textarea>
+                    <button
+                      type="submit"
+                      class="w-100 text-center text-white mt-2"
+                    >
+                      SEND
+                    </button>
+                    <div class="powered-div mt-2 d-flex justify-content-end">
+                      <span class="span-powered">powered by </span>
+                      <img src="img/olark-logo-img.png" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="button-message">
+                <img src="img/message.png" class="img-message" />
+                <span class="span-contact-us">Contact Us</span>
+                <svg
+                  class="svg-close position-absolute display-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="36px"
+                  viewBox="0 0 24 24"
+                  width="36px"
+                  fill="#FFFFFF"
+                >
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="home.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
